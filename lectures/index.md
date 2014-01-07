@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lecture Notes
+---
+
 # CS 101, Spring 2014, Lecture Notes
 
 This page has links to lecture notes.

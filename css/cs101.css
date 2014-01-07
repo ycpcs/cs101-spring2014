@@ -1,0 +1,18 @@
+body {
+	margin: 0px 80px;
+}
+
+.content {
+	padding: 10px 20px;
+	background: white;
+}
+
+h1 {
+	color: #228;
+	border-bottom: 2px solid #228;
+}
+
+h2, h3 {
+	color: #228;
+	border-bottom: 1px solid #228;
+}
