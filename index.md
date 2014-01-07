@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CS 101, Spring 2014
+title: Home page
 ---
 
 # Welcome to CS 101, Spring 2014!

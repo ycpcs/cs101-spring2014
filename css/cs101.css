@@ -2,17 +2,35 @@ body {
 	margin: 0px 80px;
 }
 
-.content {
+.pageheader h1 {
+	color: #228;
+	font-size: 200%;
+	background: #eee;
+	border: 1px solid transparent;
+	border-radius: 24px;
 	padding: 10px 20px;
+}
+
+.pageheader h1 a {
+	text-decoration: none;
+}
+
+.pageheader h1 a:hover {
+	background: black;
+	color: white;
+}
+
+.content {
+	padding: 0px 20px;
 	background: white;
 }
 
-h1 {
+.content h1 {
 	color: #228;
 	border-bottom: 2px solid #228;
 }
 
-h2, h3 {
+.content h2, .content h3 {
 	color: #228;
 	border-bottom: 1px solid #228;
 }

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lecture 1
+title: "Lecture 1: printf, scanf, int variables"
 ---
 
 A First C Program
