@@ -125,4 +125,9 @@ In this example, the format string **"%i"** is used, meaning that the program wa
 
 Here is possible output from the program when this code is executed (user input is in **bold**):
 
+<pre>
+How old are you? <b>155</b>
+OK, you are 155 years old
+</pre>
+
 The output above assumes that the user entered the value **155**.

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "More data types, expressions"
+title: "Lecture 2: More data types, expressions"
 ---
 
 More Data Types
@@ -214,6 +214,12 @@ Example:
     printf("The total cost is $%.2f\n", total);
 
 Here is an example run of this code (user input in **bold**):
+
+<pre>
+How many pounds of potatoes? <b>10</b>
+What is the cost per pound? <b>.79</b>
+The total cost is $7.90
+</pre>
 
 Integer Division and Modulus
 ============================
