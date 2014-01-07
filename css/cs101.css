@@ -42,3 +42,13 @@ pre {
 	padding: 8px;
 	border: 1px solid #bbb;
 }
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr, th, td {
+	border: 1px solid black;
+	padding: 2px 6px;
+}

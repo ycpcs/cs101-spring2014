@@ -22,7 +22,7 @@ Once this program has been entered in a *source file* and translated into an *ex
 
 Let's briefly examine the parts of this program:
 
--   **\#include \<stdio.h\>** is an *include directive* which informs the C compiler that the program will use the built-in functions for input and output.
+-   **\#include <stdio.h>** is an *include directive* which informs the C compiler that the program will use the built-in functions for input and output.
 -   **int main(void)** introduces the *main function*, which is where the execution of the program begins. The curly braces enclose the *statements* which are part of the main function.
 -   **printf("Hello, world\\n");** is a statement which prints the text **Hello, world** as output when the program is executed.
 -   **return 0;** completes the main function by indicating that the program completed successfully. (Returning 0 traditionally means that the program worked correctly, while a non-zero value indicates that an error occurred.)
