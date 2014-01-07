@@ -6,5 +6,4 @@ url: "http://daveho.github.io/cs101-spring2014"
 paginate: 10
 
 markdown: rdiscount
-permalink: pretty
 pygments: true
