@@ -10,6 +10,7 @@ All information about the course will be posted here.
 
 ## Links
 
+* [Syllabus](syllabus.html)
 * [Lecture notes](lectures/index.html)
 
 ## News
