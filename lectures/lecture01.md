@@ -19,7 +19,7 @@ Here is the traditional first C program:
 Once this program has been entered in a *source file* and translated into an *executable file* by the C compiler, we can run it. It will produce the following output, printed to the *console window*:
 
     Hello, world
-UCK
+
 Let's briefly examine the parts of this program:
 
 -   **\#include \<stdio.h\>** is an *include directive* which informs the C compiler that the program will use the built-in functions for input and output.
