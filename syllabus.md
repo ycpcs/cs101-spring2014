@@ -108,7 +108,7 @@ The grading scale for the course is given below. Please note that this grading s
 >
 ### Course website
 
-Please check the course web page, <http://daveho.github.io/cs101-spring2014/>, regularly for important announcements.
+Please check the course web page, <http://ycpcs.github.io/cs101-spring2014/>, regularly for important announcements.
 
 ### Reading Assignments
 
@@ -117,7 +117,7 @@ Readings from your text book will be assigned throughout the semester. You will 
 ### Posting and submission of assignments and labs
 
 Assignments and (some) labs will be posted as zip files on the course web page,
-<http://daveho.github.io/cs101-spring2014/>.
+<http://ycpcs.github.io/cs101-spring2014/>.
 
 Assignments will be submitted using the server <https://cs.ycp.edu/marmoset/>. You will receive an email containing the username and password you will use for this server.
 
