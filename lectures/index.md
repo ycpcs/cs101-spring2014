@@ -17,3 +17,5 @@ If you find any mistakes, please [let us know](mailto:dhovemey@ycp.edu).
 * [Lecture 5: If/Else If/Else Statements, Random Numbers](lecture05.html)
 * [Lecture 6: For loops, Loop recipes](lecture06.html)
 * [Lecture 7: While loops, Coding style](lecture07.html)
+* [Lecture 8: Nested loops, char data type](lecture08.html)
+* [Lecture 9: Arrays](lecture09.html)
