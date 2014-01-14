@@ -11,6 +11,7 @@ All information about the course will be posted here.
 ## Links
 
 * [Syllabus](syllabus.html)
+* [Schedule](schedule.html)
 * [Resources](resources.html)
 * [Lecture notes](lectures/index.html)
 
