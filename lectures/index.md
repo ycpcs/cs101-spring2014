@@ -19,3 +19,4 @@ If you find any mistakes, please [let us know](mailto:dhovemey@ycp.edu).
 * [Lecture 7: While loops, Coding style](lecture07.html)
 * [Lecture 8: Nested loops, char data type](lecture08.html)
 * [Lecture 9: Arrays](lecture09.html)
+* [Lecture 10: Multidimensional Arrays](lecture10.html)
