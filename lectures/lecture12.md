@@ -131,7 +131,7 @@ It is very important to *test* your functions to make sure they work correctly.
 
 One way to test is to use some logic with **printf**'s to check that functions are returning the expected value for particular input. Note: be careful when checking floating point numbers for *equality* as roundoff errors can occur. For example, to test the factorial function
 
-    #include<stdio.h>
+    #include <stdio.h>
 
     int factorial(int value);
 

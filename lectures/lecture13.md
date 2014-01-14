@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lecture 14: Arrays and functions"
+title: "Lecture 13: Arrays and functions"
 ---
 
 Arrays may be passed to functions. However, they behave somewhat differently than other kinds of variables we've seen.
