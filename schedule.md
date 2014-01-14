@@ -12,7 +12,7 @@ announced in class and on the course web page.
 
 > Date | Topic, Readings | CloudCoder Exercises
 > ---- | ------- | --------------------
-> Thurs, Jan 23 | [Lecture 1: printf, scanf, int variables](lectures/lecture01.html), Pg 11-19, 21-24 | Week1 &rarr; [hello](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=81), [it goes to 11](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=82), [how many tacos?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=83), [What day is it?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=84)
+> Thurs, Jan 23 | [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html), [Lecture 1: printf, scanf, int variables](lectures/lecture01.html), Pg 11-19, 21-24 | Week1 &rarr; [hello](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=81), [it goes to 11](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=82), [how many tacos?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=83), [What day is it?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=84)
 > Tues, Jan 28 | [Lecture 2: More data types, expressions](lectures/lecture02.html), Pg. 24-36 | Week2 &rarr; [hamster years](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=85), [F to C](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=86), [Mmmm, piece of candy!](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=87), [Cost of lunch](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=88)
 > Thurs, Jan 30 | [Lecture 3: More about variables and expressions](lectures/lecture03.html), Pg. 36-39 | Week2 &rarr; [radius of circle](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=89), [divvy up the rice](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=90)
 > Tues, Feb 4 | [Lecture 4: Conditions and decisions](lectures/lecture04.html), Pg. 65-83 | Week3 &rarr; [Basic Double Coupon](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=91), [Simple Filter](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=92), [Restaurant check calculator](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=94), [Bank Balance](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=93)
@@ -42,7 +42,7 @@ announced in class and on the course web page.
 > Tues, Apr 39 | [Lecture 19: Arrays of Structures](lectures/lecture19.html) | Week 14 &rarr;
 > Thurs, May 1 |
 > Tues, May 6 |
-> Thurs, May 8 |
+> Thurs, May 8 | **Exam 4** | Exam4Review &rarr;
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->

@@ -11,9 +11,9 @@ All information about the course will be posted here.
 ## Links
 
 * [Syllabus](syllabus.html)
-* [Schedule](schedule.html)
+* [Schedule/Readings](schedule.html)
 * [Resources](resources.html)
-* [Lecture notes](lectures/index.html)
+* [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html)
 
 ## News
 
