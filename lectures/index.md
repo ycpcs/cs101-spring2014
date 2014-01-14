@@ -20,3 +20,6 @@ If you find any mistakes, please [let us know](mailto:dhovemey@ycp.edu).
 * [Lecture 8: Nested loops, char data type](lecture08.html)
 * [Lecture 9: Arrays](lecture09.html)
 * [Lecture 10: Multidimensional Arrays](lecture10.html)
+* [Lecture 11: Functions](lecture11.html)
+* [Lecture 12: Functions that return a value](lecture12.html)
+* [Lecture 13: Arrays and functions](lecture13.html)

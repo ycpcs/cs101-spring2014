@@ -8,10 +8,7 @@ announced in class and on the course web page.
 
 **Important**: We expect that when you come to class you will have (a) done the reading, and (b) done any CloudCoder exercises that have been assigned for the reading.  Most class meetings will have a quiz that will test your understanding of the current topic(s).
 
-**CloudCoder Exercises**: To work on an exercise, just click on the name of
-the exercise.  You may be prompted to enter your CloudCoder username
-and password.
-
+**CloudCoder Exercises**: To work on an exercise, just click on the name of the exercise.  You may be prompted to enter your CloudCoder username and password.  Note that exercises marked with a gold star (<img src="{{site.url}}/images/goldstar-tiny.png" />) are challenging!
 
 > Date | Topic, Readings | CloudCoder Exercises
 > ---- | ------- | --------------------
@@ -22,11 +19,17 @@ and password.
 > Thurs, Feb 6 | [Lecture 5: If/Else If/Else Statements, Random Numbers](lectures/lecture05.html) | Week3 &rarr; [Triple Coupon](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=95), [member discount](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=96), [Complex Filter](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=97)
 > Tues, Feb 11 | [Lecture 6: For loops, Loop recipes](lectures/lecture06.html), Pg. 42-53 | Week4 &rarr; [bananana](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=98), [countdown](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=99), [keep doubling](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=100)
 > Thurs, Feb 13 | [Lecture 7: While loops, Coding style](lectures/lecture07.html), Pg. 56-63 | Week4 &rarr; [Check Input](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=101), [squares](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=102), [day numbers](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=103)
-> Tues, Feb 18 | [Lecture 8: Nested loops, char data type](lectures/lecture08.html), Pg. 53-56 | Week5 &rarr;
+> Tues, Feb 18 | [Lecture 8: Nested loops, char data type](lectures/lecture08.html), Pg. 53-56 | Week5 &rarr; [111222333444](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=104), [which and how many?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=105)
 > Thurs, Feb 20 | **Exam 1** | Exam1Review &rarr;
-> Tues, Feb 25 | Arrays, [Lecture 9: Arrays](lectures/lecture09.html), Pg. 95-108 | Week 6 &rarr;
-> Thurs, Feb 27 | Arrays, continued | Week6 &rarr;
-> Tues, March 4 | [Lecture 10: Multidimensional Arrays](lectures/lecture10.html), Pg. 
+> Tues, Feb 25 | Arrays, [Lecture 9: Arrays](lectures/lecture09.html), Pg. 95-108 | Week6 &rarr; [Array Scanner](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=106), [Pair sums](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=107), [Exceeded Amount](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=108)
+> Thurs, Feb 27 | Arrays, continued | Week6 &rarr; [Not like the others](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=109)
+> Tues, Mar 3 | Winter vacation &mdash; no class |
+> Thurs, Mar 5 | Winter vacation &mdash; no class |
+> Tues, Mar 11 | [Lecture 10: Multidimensional Arrays](lectures/lecture10.html), Pg. 113-115 | Week7 &rarr;
+> Thurs, Mar 13 | [Lecture 11: Functions](lectures/lecture11.html), Pg. 119-126 | Week7 &rarr; [Print sum](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=110), [Deep Thought](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=111), [Find Primes](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=112) <img src="{{site.url}}/images/goldstar-tiny.png" />
+> Tues, Mar 18 | [Lecture 12: Functions that return a value](lectures/lecture12.html), Pg. 126-137 | Week8 &rarr;
+> Thurs, Mar 20 | Functions review | Week8 &rarr;
+> Tues, Mar 25 | **Exam 2** | Exam2Review &rarr;
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
