@@ -23,3 +23,6 @@ If you find any mistakes, please [let us know](mailto:dhovemey@ycp.edu).
 * [Lecture 11: Functions](lecture11.html)
 * [Lecture 12: Functions that return a value](lecture12.html)
 * [Lecture 13: Arrays and functions](lecture13.html)
+* [Lecture 14: Pointers, reference parameters](lecture14.html)
+* [Lecture 15: Struct types](lecture15.html)
+* [Lecture 16: Using structs with functions](lecture16.html)

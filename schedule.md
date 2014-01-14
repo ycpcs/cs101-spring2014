@@ -31,6 +31,18 @@ announced in class and on the course web page.
 > Thurs, Mar 20 | Functions review | Week8 &rarr;
 > Tues, Mar 25 | **Exam 2** | Exam2Review &rarr;
 > Thurs, Mar 27 | [Lecture 13: Arrays and functions](lectures/lecture13.html), Pg. 137-152 | Week9 &rarr; [ArraySum](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=113), [IsAscending](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=115), [countOdd](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=114)
+> Tues, Apr 1 | [Lecture 14: Pointers, reference parameters](lectures/lecture14.html), Pg. 235-243 | Week10 &rarr; [AddEmUp](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=118)
+> Thurs, Apr 3 | [Lecture 15: Struct types](lectures/lecture15.html), Pg. 165-171 | Week10 &rarr; [area of Rectangle](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=119)
+> Tues, Apr 8 | [Lecture 16: Using structs with functions](lectures/lecture16.html), Pg. 185-190 | Week11 &rarr;
+> Thurs, Apr 10 | Structs review | Week11 &rarr;
+> Tues, Apr 15 | **Exam 3** | Exam3Review &rarr;
+> Thurs, Apr 17 | Spring vacation &mdash; no class |
+> Tues, Apr 22 | [Lecture 17: Pointers to Structures](lectures/lecture17.html) | Week13 &rarr;
+> Thurs, Apr 24 | [Lecture 18: Composition](lectures/lecture18.html) | Week13 &rarr;
+> Tues, Apr 39 | [Lecture 19: Arrays of Structures](lectures/lecture19.html) | Week 14 &rarr;
+> Thurs, May 1 |
+> Tues, May 6 |
+> Thurs, May 8 |
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
