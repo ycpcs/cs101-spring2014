@@ -12,9 +12,9 @@ CS 101 - Fundamentals of Computer Science I
 
 Instructors:
 
-- Section 101: [David Hovemeyer](http://faculty.ycp.edu/~dhovemey/), <dhovemey@ycp.edu>
-- Sections 102, 103: Deepti Jindal, <djindal@ycp.edu>
-- Sections 104, 105: Morris Miller, <mmmiller@ycp.edu>
+- Section 101: [David Hovemeyer](http://faculty.ycp.edu/~dhovemey/), <dhovemey@ycp.edu>, Office hours TBD
+- Sections 102, 103: Deepti Jindal, <djindal@ycp.edu>, Office hours 1-2PM Tues/Thurs in KEC 115
+- Sections 104, 105: Morris Miller, <mmmiller@ycp.edu>, Office hours 11:30AM-12:30 PM in KEC 115
 
 Course Description
 ------------------
