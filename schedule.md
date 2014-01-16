@@ -22,7 +22,7 @@ announced in class and on the course web page.
 > Tues, Feb 18 | [Lecture 8: Nested loops, char data type](lectures/lecture08.html), Pg. 53-56 | Week5 &rarr; [111222333444](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=104), [which and how many?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=105)
 > Thurs, Feb 20 | **Exam 1** | Exam1Review &rarr;
 > Tues, Feb 25 | Arrays, [Lecture 9: Arrays](lectures/lecture09.html), Pg. 95-108 | Week6 &rarr; [Array Scanner](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=106), [Pair sums](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=107), [Exceeded Amount](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=108)
-> Thurs, Feb 27 | Arrays, continued | Week6 &rarr; [Not like the others](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=109)
+> Thurs, Feb 27 | Arrays, continued | Week6 &rarr; [Not like the others](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=109) <img src="{{site.url}}/images/goldstar-tiny.png" />
 > Tues, Mar 3 | Winter vacation &mdash; no class |
 > Thurs, Mar 5 | Winter vacation &mdash; no class |
 > Tues, Mar 11 | [Lecture 10: Multidimensional Arrays](lectures/lecture10.html), Pg. 113-115 | Week7 &rarr;
