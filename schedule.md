@@ -39,7 +39,7 @@ announced in class and on the course web page.
 > Thurs, Apr 17 | Spring vacation &mdash; no class |
 > Tues, Apr 22 | [Lecture 17: Pointers to Structures](lectures/lecture17.html) | Week13 &rarr;
 > Thurs, Apr 24 | [Lecture 18: Composition](lectures/lecture18.html) | Week13 &rarr;
-> Tues, Apr 39 | [Lecture 19: Arrays of Structures](lectures/lecture19.html) | Week 14 &rarr;
+> Tues, Apr 29 | [Lecture 19: Arrays of Structures](lectures/lecture19.html) | Week 14 &rarr;
 > Thurs, May 1 |
 > Tues, May 6 |
 > Thurs, May 8 | **Exam 4** | Exam4Review &rarr;
