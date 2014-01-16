@@ -12,6 +12,8 @@ All information about the course will be posted here.
 
 * [Syllabus](syllabus.html)
 * [Schedule/Readings](schedule.html)
+* [Assignments](assign/index.html)
+* [Labs](labs/index.html)
 * [Resources](resources.html)
 * [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html)
 
