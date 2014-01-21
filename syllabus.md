@@ -57,9 +57,11 @@ Your course grade will be determined as follows:
 
 -   Homework (programming assignments): 15% **(\*)**
 -   Quizzes (in class): 15%
--   Exams (4 midterms and 1 cumulative final exam, lowest score dropped): 70%
+-   Exams (4 midterms and 1 cumulative final exam, lowest score dropped): 70% **(&dagger;)**
 
 **(\*)** You must demonstrate significant effort on all homework assignments in order to pass the course. The very important Outcome CO12 (Use top-down design to decompose complex problems into simpler problems) cannot be assessed based on exams alone. This will be demonstrated via homework assignments. Failure to demonstrate this outcome on homework assignments will be grounds for failure even with a high exam average.
+
+**(&dagger;)** You must pass (receive a grade of 70 or higher) on at least one exam in order to receive a passing grade for the course.
 
 ### Grading scale
 

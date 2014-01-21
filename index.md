@@ -19,4 +19,5 @@ All information about the course will be posted here.
 
 ## News
 
+* **Jan 22** - [Assignment 1](assign/assign01.html) is due Monday, Feb 3rd by 11:59 PM.
 * **Jan 22** - Welcome back!
