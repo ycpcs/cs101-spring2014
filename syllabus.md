@@ -107,7 +107,7 @@ The grading scale for the course is given below. Please note that this grading s
 > </tr>
 > </tbody>
 > </table>
->
+
 ### Course website
 
 Please check the course web page, <http://ycpcs.github.io/cs101-spring2014/>, regularly for important announcements.
