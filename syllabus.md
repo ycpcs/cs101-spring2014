@@ -3,8 +3,6 @@ layout: default
 title: Syllabus
 ---
 
-*Note*: Preliminary syllabus, not official
-
 CS 101 - Fundamentals of Computer Science I
 ===========================================
 
@@ -36,17 +34,15 @@ Learning Outcomes
 
 The basic objectives of this course are to provide the student with enough programming tools and methods to feel comfortable writing C / C++ / C\# programs that solve problems encountered in computer science and engineering. The following topics will tentatively be covered:
 
--   CO1 - Be able to create, compile, and run C programs using a Gnu C/C++ compiler
--   CO2 - Be able to declare variables of various types and write programs that do basic arithmetic operations
--   CO3 - Understand and apply control structures such as conditionals and loops
--   CO4 - Understand and use arrays and vectors
--   CO5 - Understand and be able to write functions
--   CO6 - Understand and be able to define and use structure types
--   CO8 - Understand and be able to use character strings
--   CO9 - Understand and be able to use pointers
--   CO10 - Use C\# and Visual Studio to create basic Graphical User Interfaces
--   CO11 - Use C\# to produce graphics other than form components
--   CO12 - Use top-down design to decompose complex problems into simpler problems
+-   Be able to create, compile, and run C programs using a Gnu C/C++ compiler
+-   Be able to declare variables of various types and write programs that do basic arithmetic operations
+-   Understand and apply control structures such as conditionals and loops
+-   Understand and use arrays
+-   Understand and be able to write functions
+-   Understand and be able to define and use structure types
+-   Understand and be able to use character strings
+-   Understand and be able to use pointers
+-   Use top-down design to decompose complex problems into simpler problems
 
 Policies
 --------
