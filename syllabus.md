@@ -10,9 +10,9 @@ CS 101 - Fundamentals of Computer Science I
 
 Instructors:
 
-- Section 101: [David Hovemeyer](http://faculty.ycp.edu/~dhovemey/), <dhovemey@ycp.edu>
-- Sections 102, 103: Deepti Jindal, <djindal@ycp.edu>
-- Sections 104, 105: Morris Miller, <mmmiller@ycp.edu>
+- Section 101: [David Hovemeyer](http://faculty.ycp.edu/~dhovemey/), <dhovemey@ycp.edu>, Office hours M/T/W/Th 2-3 PM, F 10-11 AM, or by arrangement
+- Sections 102, 103: Deepti Jindal, <djindal@ycp.edu>, Office hours 12PM-1PM Tues/Thurs in KEC 115
+- Sections 104, 105: Morris Miller, <mmmiller@ycp.edu>, Office hours 11:30AM-12:30 PM Tues/Thurs in [TBD]
 
 Course Description
 ------------------
@@ -53,9 +53,11 @@ Your course grade will be determined as follows:
 
 -   Homework (programming assignments): 15% **(\*)**
 -   Quizzes (in class): 15%
--   Exams (4 midterms and 1 cumulative final exam, lowest score dropped): 70%
+-   Exams (4 midterms and 1 cumulative final exam, lowest score dropped): 70% **(&dagger;)**
 
 **(\*)** You must demonstrate significant effort on all homework assignments in order to pass the course. The very important Outcome CO12 (Use top-down design to decompose complex problems into simpler problems) cannot be assessed based on exams alone. This will be demonstrated via homework assignments. Failure to demonstrate this outcome on homework assignments will be grounds for failure even with a high exam average.
+
+**(&dagger;)** You must pass (receive a grade of 70 or higher) on at least one exam in order to receive a passing grade for the course.
 
 ### Grading scale
 
@@ -101,7 +103,7 @@ The grading scale for the course is given below. Please note that this grading s
 > </tr>
 > </tbody>
 > </table>
->
+
 ### Course website
 
 Please check the course web page, <http://ycpcs.github.io/cs101-spring2014/>, regularly for important announcements.
