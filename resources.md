@@ -15,7 +15,7 @@ This page contains links to useful resources.
 
 **Mac**
 
-> Install Xcode by downloading it from the Mac App Store (free). After XCode is installed, go to XCode-\>Preferences-\>Downloads and install **Command Line Tools**. Then use a **Terminal** (located in Applications/Utilities) wherever cygwin would be used in Windows. You may use any text editor for editing the source files, e.g. TextEdit, or a nice (free) one is [TextWrangler](http://www.barebones.com/products/textwrangler/).
+> Install Xcode by downloading it from the Mac App Store (free). After XCode is installed, go to XCode &rarr; Preferences &rarr; Downloads and install **Command Line Tools**. Then use a **Terminal** (located in Applications/Utilities) wherever cygwin would be used in Windows. You may use any text editor for editing the source files, e.g. TextEdit, or a nice (free) one is [TextWrangler](http://www.barebones.com/products/textwrangler/).
 
 **Linux**
 

@@ -3,7 +3,7 @@ layout: default
 title: Installing Cygwin
 ---
 
-This page describes how to install the [cygwin](http://cygwin.com/) tools you will need to compile, run, and submit programs in CS 101. These notes assume that you are installing on a Windows system.
+This page describes how to install the [cygwin](http://cygwin.com/) tools you will need to compile, run, and submit programs in CS 101 on a Windows system.
 
 **Step 1**: Go to <http://cygwin.com/>. Click the **Install Cygwin** tab in the left hand column and click the **setup.exe** to download the setup program. Run the setup program which you just downloaded.
 
@@ -53,39 +53,13 @@ You can choose any download site. An HTTP site might work better than an FTP sit
 
 You will need to install the following packages:
 
-> <table>
-> <col width="20%" />
-> <col width="48%" />
-> <thead>
-> <tr class="header">
-> <th align="left">Category</th>
-> <th align="left">Packages</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">Archive</td>
-> <td align="left">zip, unzip</td>
-> </tr>
-> <tr class="even">
-> <td align="left">Devel</td>
-> <td align="left">gcc-g++, libncurses-devel, make</td>
-> </tr>
-> <tr class="odd">
-> <td align="left">Interpreters</td>
-> <td align="left">perl</td>
-> </tr>
-> <tr class="even">
-> <td align="left">Lib</td>
-> <td align="left">libsasl2</td>
-> </tr>
-> <tr class="odd">
-> <td align="left">Net</td>
-> <td align="left">curl, openssh</td>
-> </tr>
-> </tbody>
-> </table>
->
+> Category | Packages
+> -------- | --------
+> Archive  | zip, unzip
+> Devel    | gcc-g++, libncursesw-devel, make
+> Interpreters | perl
+> Net      | curl, openssh
+
 To choose a package, expand its category, then click on the word "Skip" to the left of the package name. The word "Skip" will be replaced by a version number. For example, after choosing the "curl" package in the "Net" category, my window looked like this:
 
 > ![image](images/setup9.png)
@@ -100,4 +74,4 @@ When you have selected the required packages, click **Next**. You will see a pro
 
 Make sure that you add at least one icon (to the Desktop or Start Menu).
 
-You can now start the Cygwin bash shell by clicking on the **Cygwin** icon on the Desktop or the **Start-\>All Programs-\>Cygwin-\>Cywgin Bash Shell** menu item.
+You can now start the Cygwin bash shell by clicking on the **Cygwin** icon on the Desktop or the **Start &rarr; All Programs &rarr; Cygwin &rarr; Cywgin Bash Shell** menu item.
