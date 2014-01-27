@@ -10,9 +10,9 @@ We covered the **int** data type in [Lecture 1](lecture01.html).
 
 Two other important numeric data types:
 
-> **float** - real numbers in the range (approximately) +/- 10\^-46 to 10\^38
+> **float** - real numbers in the range (approximately) +/- 10^-46 to 10^38
 >
-> **double** - real numbers in the range (approximately) +/- 10\^-324 to 10\^308
+> **double** - real numbers in the range (approximately) +/- 10^-324 to 10^308
 
 Unlike the int type, float and double are not limited to integer values, and can represent fractions.
 
@@ -98,7 +98,7 @@ The code above produces the output
 
     4.560000e+02
 
-You can read this output as "4.56 x 10\^2".
+You can read this output as "4.56 x 10^2".
 
 As with **%f** (and (**%lf**), you can control the number of digits of precision after the decimal point. For example, the code
 
