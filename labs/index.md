@@ -12,3 +12,4 @@ and submitting the labs will negatively impact your course grade.
 > Date | Lab | File
 > ---- | --- | ----
 > Thurs, Jan 23rd | [Lab 1: Hello CS101!](lab01.html) | [CS101\_Lab01.zip](CS101_Lab01.zip)
+> Tues, Jan 28th | [Lab 2: Expensive Calculator](lab02.html) | [CS101\_Lab02.zip](CS101_Lab02.zip)
