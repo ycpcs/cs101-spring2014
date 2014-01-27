@@ -3,6 +3,32 @@ layout: default
 title: "Lab 2: Expensive Calculator"
 ---
 
+Getting started
+===============
+
+Refer to [Lab 1](lab01.html) if you need a reminder about how to start **Cygwin Terminal** or **Notepad++**.
+
+Start by downloading [CS101\_Lab02.zip](CS101_Lab02.zip), saving it in the directory **H:\\CS101**.
+
+Start a **Cygwin Terminal** and run the following commands:
+
+    cd h:
+    cd CS101
+    unzip CS101_Lab02.zip
+    cd CS101_Lab02
+
+Using **Notepad++**, open the file
+
+> **H:\\CS101\\CS101\_Lab02\\Calculator.cpp**
+
+Run the command
+
+    make
+
+when you are ready to compile the program. To run the program, run the command
+
+    ./Calculator.exe
+
 Expensive Calculator
 ====================
 
@@ -27,32 +53,6 @@ Thank you for using the expensive calculator.
 </pre>
 
 Each double quantity should be printed with three digits of precision after the decimal point.
-
-Getting started
-===============
-
-Refer to [Lab 1](lab01.html) if you need a reminder about how to start **Cygwin Terminal** or **Notepad++**.
-
-Start by downloading <CS101_Lab02.zip>, saving it in the directory **H:\\CS101**.
-
-Start a **Cygwin Terminal** and run the following commands:
-
-    cd h:
-    cd CS101
-    unzip CS101_Lab02.zip
-    cd CS101_Lab02
-
-Using **Notepad++**, open the file
-
-> **H:\\CS101\\CS101\_Lab02\\Calculator.cpp**
-
-Run the command
-
-    make
-
-when you are ready to compile the program. To run the program, run the command
-
-    ./Calculator.exe
 
 Hints
 =====
