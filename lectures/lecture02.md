@@ -34,30 +34,11 @@ Output and input using float and double
 
 The **printf** and **scanf** functions can be used to output and input **float** and **double** values by using the appropriate conversion specifier:
 
-> <table>
-> <col width="20%" />
-> <col width="36%" />
-> <thead>
-> <tr class="header">
-> <th align="left">Data type</th>
-> <th align="left">Conversion specifier</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">int</td>
-> <td align="left">%i</td>
-> </tr>
-> <tr class="even">
-> <td align="left">float</td>
-> <td align="left">%f</td>
-> </tr>
-> <tr class="odd">
-> <td align="left">double</td>
-> <td align="left">%lf</td>
-> </tr>
-> </tbody>
-> </table>
+> Data type | Conversion specifier
+> --------- | --------------------
+> int | %i
+> float | %f
+> double | %lf
 
 Example:
 
@@ -164,38 +145,13 @@ Here is the general syntax of several kinds of expressions using *binary operato
 
 These operators have the following meanings:
 
-> <table>
-> <col width="18%" />
-> <col width="29%" />
-> <thead>
-> <tr class="header">
-> <th align="left">Operator</th>
-> <th align="left">Meaning</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">+</td>
-> <td align="left">Addition</td>
-> </tr>
-> <tr class="even">
-> <td align="left">-</td>
-> <td align="left">Subtraction</td>
-> </tr>
-> <tr class="odd">
-> <td align="left">*</td>
-> <td align="left">Multiplication</td>
-> </tr>
-> <tr class="even">
-> <td align="left">/</td>
-> <td align="left">Division</td>
-> </tr>
-> <tr class="odd">
-> <td align="left">%</td>
-> <td align="left">Modulus (remainder)</td>
-> </tr>
-> </tbody>
-> </table>
+> Operator | Meaning
+> -------- | -------
+> \+ | Addition
+> \- | Subtraction
+> \* | Multiplication
+> / | Division
+> % | Modulus (remainder)
 
 Example:
 
