@@ -15,9 +15,11 @@ All information about the course will be posted here.
 * [Assignments](assign/index.html)
 * [Labs](labs/index.html)
 * [Resources](resources.html)
+* [Examples](examples/index.html)
 * [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html)
 
 ## News
 
+* **Jan 28** - The [Examples](examples/index.html) page has code examples discussed in class.
 * **Jan 22** - [Assignment 1](assign/assign01.html) is due Monday, Feb 3rd by 11:59 PM.
 * **Jan 22** - Welcome back!
