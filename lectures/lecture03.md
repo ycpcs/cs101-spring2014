@@ -131,8 +131,8 @@ Most of the functions in **&lt;math.h&gt;** operate on **double** values. Here a
 > </tr>
 > </tbody>
 > </table>
->
-A few examples of using functions from **\<math.h\>**:
+
+A few examples of using functions from **&lt;math.h&gt;**:
 
     double x;
     double theta;
@@ -148,7 +148,7 @@ A few examples of using functions from **\<math.h\>**:
     printf("The sine of %f is %f\n", theta, sin(theta));
     printf("The cosine of %f is %f\n", theta, cos(theta));
 
-In addition to the functions available in **\<math.h\>**, the special constant value **M\_PI** is available. This constant represents the **double** value closest to the value of π (pi).
+In addition to the functions available in **&lt;math.h&gt;**, the special constant value **M\_PI** is available. This constant represents the **double** value closest to the value of π (pi).
 
 Type casts
 ==========
