@@ -94,18 +94,18 @@ is exactly equivalent to the code
 
 In both cases, the sum of **a** and 2 is computed, and then the sum is stored back into **a**, replacing the previous value.
 
-\<math.h>
-==========
+&lt;math.h&gt;
+========
 
-So far, the operators we have seen are useful for simple arithmetic. More powerful mathematical functions are available through the inclusion of the **\<math.h\>** header file. To use these functions, simply add the line
+So far, the operators we have seen are useful for simple arithmetic. More powerful mathematical functions are available through the inclusion of the **&lt;math.h&gt;** header file. To use these functions, simply add the line
 
-> **\#include \<math.h\>**
+> **\#include &lt;math.h&gt;**
 
 to the top of your program, just below the line
 
-> **\#include \<stdio.h\>**
+> **\#include &lt;stdio.h&gt;**
 
-Most of the functions in **\<math.h\>** operate on **double** values. Here are a few of the functions:
+Most of the functions in **&lt;math.h&gt;** operate on **double** values. Here are a few of the functions:
 
 > <table>
 > <col width="20%" />
