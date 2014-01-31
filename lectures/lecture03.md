@@ -8,17 +8,19 @@ More about variables
 
 Variables are independent:
 
-    int a;
-    int b;
+{% highlight cpp %}
+int a;
+int b;
 
-    a = 121;
-    b = a;
+a = 121;
+b = a;
 
-    printf("a = %i, b = %i\n", a, b); /* prints a = 121, b = 121 */
+printf("a = %i, b = %i\n", a, b); /* prints a = 121, b = 121 */
 
-    a = 1001;
+a = 1001;
 
-    printf("a = %i, b = %i\n", a, b); /* prints a = 1001, b = 121 */
+printf("a = %i, b = %i\n", a, b); /* prints a = 1001, b = 121 */
+{% endhighlight %}
 
 Even though the variable **b** initially contains the same value as the variable **a**, it is still a different variable. Variables are *storage locations*. Storing a value in one variable does not change the value of any other variable.
 
@@ -27,15 +29,17 @@ Updating a variable
 
 The value stored in a variable can be updated whenever necessary. For example, adding 1 to a variable and storing the incremented value back into the same variable:
 
-    int a;
+{% highlight cpp %}
+int a;
 
-    a = 10;
+a = 10;
 
-    printf("a = %i\n", a);
+printf("a = %i\n", a);
 
-    a = a + 1;
+a = a + 1;
 
-    printf("a = %i\n", a);
+printf("a = %i\n", a);
+{% endhighlight %}
 
 Remember, a variable is a storage location for a value. Because a new value can be stored in a variable at any time, overwriting the previous value, the values of variables can change as the program executes.
 
@@ -46,16 +50,18 @@ Updating a variable to add 1 to or subtract 1 from the value stored in the varia
 
 Example:
 
-    int a;
-    int b;
+{% highlight cpp %}
+int a;
+int b;
 
-    a = 3;
-    b = 3;
+a = 3;
+b = 3;
 
-    a++;
-    b--;
+a++;
+b--;
 
-    printf("a = %i, b = %i\n", a, b);
+printf("a = %i, b = %i\n", a, b);
+{% endhighlight %}
 
 This code produces the output
 
@@ -68,17 +74,19 @@ Another way to update the value of a variable using one of the *compound assignm
 
 Example:
 
-    int a, b, c;
+{% highlight cpp %}
+int a, b, c;
 
-    a = 3;
-    b = 3;
-    c = 3;
+a = 3;
+b = 3;
+c = 3;
 
-    a += 2;
-    b -= 2;
-    c *= 2;
+a += 2;
+b -= 2;
+c *= 2;
 
-    printf("a = %i, b = %i, c = %i\n", a, b, c);
+printf("a = %i, b = %i, c = %i\n", a, b, c);
+{% endhighlight %}
 
 This code produces the output
 
@@ -134,19 +142,21 @@ Most of the functions in **&lt;math.h&gt;** operate on **double** values. Here a
 
 A few examples of using functions from **&lt;math.h&gt;**:
 
-    double x;
-    double theta;
+{% highlight cpp %}
+double x;
+double theta;
 
-    printf("Enter a number: ");
-    scanf("%lf", &x);
+printf("Enter a number: ");
+scanf("%lf", &x);
 
-    printf("The square root of %f is %f\n", x, sqrt(x));
+printf("The square root of %f is %f\n", x, sqrt(x));
 
-    printf("Enter an angle in radians: ");
-    scanf("%lf", &theta);
+printf("Enter an angle in radians: ");
+scanf("%lf", &theta);
 
-    printf("The sine of %f is %f\n", theta, sin(theta));
-    printf("The cosine of %f is %f\n", theta, cos(theta));
+printf("The sine of %f is %f\n", theta, sin(theta));
+printf("The cosine of %f is %f\n", theta, cos(theta));
+{% endhighlight %}
 
 In addition to the functions available in **&lt;math.h&gt;**, the special constant value **M\_PI** is available. This constant represents the **double** value closest to the value of π (pi).
 
@@ -163,15 +173,17 @@ A type cast converts the value computed by an expression to an "equivalent" valu
 
 Example: dividing one integer value by another, retaining the fractional part of the answer:
 
-    int a;
-    int b;
-    double quotient;
+{% highlight cpp %}
+int a;
+int b;
+double quotient;
 
-    a = 7;
-    b = 4;
-    quotient = (double) a / (double) b;
+a = 7;
+b = 4;
+quotient = (double) a / (double) b;
 
-    print("%i / %i = %f\n", a, b, quotient);
+print("%i / %i = %f\n", a, b, quotient);
+{% endhighlight %}
 
 What's going on is that we are casting the **int** variables **a** and **b** to the type **double**, and then using the division operator on the resulting **double** values. This modified code fragment finally produces the output we want, 1.750000.
 
@@ -191,13 +203,15 @@ A type is "more precise" than another when it has more bits in its representatio
 
 Example:
 
-    int a;
-    double b;
+{% highlight cpp %}
+int a;
+double b;
 
-    scanf("%i", &a);
-    scanf("%lf", &b);
+scanf("%i", &a);
+scanf("%lf", &b);
 
-    printf("%f\n", a * b);
+printf("%f\n", a * b);
+{% endhighlight %}
 
 The **int** value a is converted to an equivalent **double** value before the multiplication is performed.
 
@@ -212,11 +226,13 @@ Syntax:
 
 Examples:
 
-    int i;
-    double d;
+{% highlight cpp %}
+int i;
+double d;
 
-    i = 17;
-    d = 43.3;
+i = 17;
+d = 43.3;
 
-    printf("%i\n", -i);
-    printf("%f\n", -d);
+printf("%i\n", -i);
+printf("%f\n", -d);
+{% endhighlight %}

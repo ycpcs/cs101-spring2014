@@ -71,13 +71,15 @@ e.g. 5 == **x** since this syntax is invalid for assignment (5 = **x**).
 
 Examples of expressions containing relational operators (note these are *expressions* and not *statements*:
 
-    a == 1
+{% highlight cpp %}
+a == 1
 
-    count <= 100
+count <= 100
 
-    currentTemp > previousHighTemp
+currentTemp > previousHighTemp
 
-    (a * b) > 4500
+(a * b) > 4500
+{% endhighlight %}
 
 Logical operators
 =================
@@ -113,9 +115,11 @@ Often, the logical operators are used to combine expressions involving relationa
 
 Examples:
 
-    (age < 13) || (age > 19)
+{% highlight cpp %}
+(age < 13) || (age > 19)
 
-    (age >= 35) && (born_in_usa)
+(age >= 35) && (born_in_usa)
+{% endhighlight %}
 
 C doesn't work like English - can't say "if n is equal to 2 or 3" as (**n** == 2 || 3). Instead it must be "if n is equal to 2 OR n is equal to 3" as (**n** == 2 || **n** == 3).
 
@@ -145,14 +149,16 @@ In the second form, the condition, depending on whether it computes a true or fa
 
 Example:
 
-    double temp;
+{% highlight cpp %}
+double temp;
 
-    printf("What was today's high temperature? ");
-    scanf("%lf", &temp);
+printf("What was today's high temperature? ");
+scanf("%lf", &temp);
 
-    if (temp >= 90.0) {
-        printf("That's hot!\n");
-    }
-    else {
-        printf("Not too hot today\n");
-    }
+if (temp >= 90.0) {
+    printf("That's hot!\n");
+}
+else {
+    printf("Not too hot today\n");
+}
+{% endhighlight %}

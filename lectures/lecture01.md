@@ -8,13 +8,15 @@ A First C Program
 
 Here is the traditional first C program:
 
-    #include <stdio.h>
+{% highlight cpp %}
+#include <stdio.h>
 
-    int main(void)
-    {
-        printf("Hello, world\n");
-        return 0;
-    }
+int main(void)
+{
+    printf("Hello, world\n");
+    return 0;
+}
+{% endhighlight %}
 
 Once this program has been entered in a *source file* and translated into an *executable file* by the C compiler, we can run it. It will produce the following output, printed to the *console window*:
 
@@ -50,9 +52,11 @@ In a C program, variables are created by using a *variable declaration statement
 
 For example, here are some examples of variable declarations:
 
-    int a;
-    int count;
-    int product;
+{% highlight cpp %}
+int a;
+int count;
+int product;
+{% endhighlight %}
 
 An assignment statement stores a new value in a variable. Assignment statements have the following general form:
 
@@ -64,14 +68,16 @@ An assignment statement stores a new value in a variable. Assignment statements 
 
 Examples:
 
-    // store the value 17 in the variable a
-    a = 17;
+{% highlight cpp %}
+// store the value 17 in the variable a
+a = 17;
 
-    // store the value 0 in the variable product
-    product = 0;
+// store the value 0 in the variable product
+product = 0;
 
-    // retrieve the current value of variable a and store it in the variable count
-    count = a;
+// retrieve the current value of variable a and store it in the variable count
+count = a;
+{% endhighlight %}
 
 Note that the "//" character sequence starts a *comment*. Comments are ignored by the compiler, but are useful for the programmer reading the program.
 
@@ -82,11 +88,13 @@ Integer values may be printed to the console window using the **printf** functio
 
 Example:
 
-    int answer;
+{% highlight cpp %}
+int answer;
 
-    answer = 42;
+answer = 42;
 
-    printf("The answer to life, the universe, and everything is %i\n", answer);
+printf("The answer to life, the universe, and everything is %i\n", answer);
+{% endhighlight %}
 
 This code fragment prints the following text to the console window:
 
@@ -96,7 +104,9 @@ The special character sequence **%i** means "get an integer value and print its 
 
 Multiple occurrences of **%i** can be used with multiple values:
 
-    printf("%i, %i, %i...blast off!\n", 3, 2, 1);
+{% highlight cpp %}
+printf("%i, %i, %i...blast off!\n", 3, 2, 1);
+{% endhighlight %}
 
 This prints
 
@@ -117,9 +127,11 @@ The *identifier* is the name of a variable into which the information typed by t
 
 Example:
 
-    int age;
-    scanf("%i", &age);
-    printf("OK, you are %i years old\n", age);
+{% highlight cpp %}
+int age;
+scanf("%i", &age);
+printf("OK, you are %i years old\n", age);
+{% endhighlight %}
 
 In this example, the format string **"%i"** is used, meaning that the program wants an integer value from the keyboard. The value the user types will be stored in the **age** variable.
 

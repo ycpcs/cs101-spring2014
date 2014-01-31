@@ -23,9 +23,11 @@ float and double are "floating point" types:
 
 You can specify literal float and double values in a program by expressing them as decimal values:
 
-    double weight;
+{% highlight cpp %}
+double weight;
 
-    weight = 47.5;
+weight = 47.5;
+{% endhighlight %}
 
 The code above assigns the literal **double** value 47.5 to the variable **weight**.
 
@@ -42,16 +44,20 @@ The **printf** and **scanf** functions can be used to output and input **float**
 
 Example:
 
-    double weight;
+{% highlight cpp %}
+double weight;
 
-    printf("Enter a weight in pounds: ");
-    scanf("%lf", &weight);
+printf("Enter a weight in pounds: ");
+scanf("%lf", &weight);
 
-    printf("You entered: %lf\n", weight);
+printf("You entered: %lf\n", weight);
+{% endhighlight %}
 
 Note that, for **printf** only, the **%f** conversion specifier can print both **float** and **double** values. So, we could have written the last line of the code snippet above like this:
 
-    printf("You entered: %f\n", weight);
+{% highlight cpp %}
+printf("You entered: %f\n", weight);
+{% endhighlight %}
 
 For **scanf**, you *must* use the **%lf** conversion specifier to read a value into **double** variable.
 
@@ -62,7 +68,9 @@ Normally, when you print a **float** or **double** value using **printf**, there
 
 Example:
 
-    printf("You entered: %.3f\n", weight);
+{% highlight cpp %}
+printf("You entered: %.3f\n", weight);
+{% endhighlight %}
 
 The **printf** statement above will print 3 decimal places past the decimal point.
 
@@ -71,9 +79,11 @@ Exponential notation
 
 The **%e** and **%le** conversion specifiers allow you to print **float** or **double** values (respectively) using exponential notation. Example:
 
-    double a;
-    a = 456;
-    printf("%le\n", a);
+{% highlight cpp %}
+double a;
+a = 456;
+printf("%le\n", a);
+{% endhighlight %}
 
 The code above produces the output
 
@@ -83,9 +93,11 @@ You can read this output as "4.56 x 10^2".
 
 As with **%f** (and (**%lf**), you can control the number of digits of precision after the decimal point. For example, the code
 
-    double a;
-    a = 456;
-    printf("%.3le\n", a);
+{% highlight cpp %}
+double a;
+a = 456;
+printf("%.3le\n", a);
+{% endhighlight %}
 
 prints the output
 
@@ -118,9 +130,11 @@ Variable References
 
 A variable reference computes the value stored in a variable. For example:
 
-    int age;
-    scanf("%i", &age);
-    printf("You are %i years old\n", age);
+{% highlight cpp %}
+int age;
+scanf("%i", &age);
+printf("You are %i years old\n", age);
+{% endhighlight %}
 
 The use of the **age** variable in the **printf** statement is a variable reference. The variable reference will compute whatever **int** value was stored in the variable by the **scanf** statement.
 
@@ -155,19 +169,21 @@ These operators have the following meanings:
 
 Example:
 
-    double weight;
-    double unit_price;
+{% highlight cpp %}
+double weight;
+double unit_price;
 
-    printf("How many pounds of potatoes? ");
-    scanf("%lf", &weight);
+printf("How many pounds of potatoes? ");
+scanf("%lf", &weight);
 
-    printf("What is the cost per pound? ");
-    scanf("%lf", &unit_price);
+printf("What is the cost per pound? ");
+scanf("%lf", &unit_price);
 
-    double total;
+double total;
 
-    total = weight * unit_price;
-    printf("The total cost is $%.2f\n", total);
+total = weight * unit_price;
+printf("The total cost is $%.2f\n", total);
+{% endhighlight %}
 
 Here is an example run of this code (user input in **bold**):
 
@@ -182,16 +198,18 @@ Integer Division and Modulus
 
 Question: what output does the following code fragment print?
 
-    int a;
-    int b;
-    int quotient;
+{% highlight cpp %}
+int a;
+int b;
+int quotient;
 
-    a = 5;
-    b = 2;
+a = 5;
+b = 2;
 
-    quotient = a / b;
+quotient = a / b;
 
-    print("%i / %i = %i\n", a, b, quotient);
+print("%i / %i = %i\n", a, b, quotient);
+{% endhighlight %}
 
 Mathematically, 5 / 2 = 2.5. However, the output of the code fragment is "2".
 
@@ -199,29 +217,33 @@ The explanation is that when both operands to a division operator are int values
 
 The integer modulus operator, **%**, computes the remainder of an integer division:
 
-    int a;
-    int b;
-    int remainder;
+{% highlight cpp %}
+int a;
+int b;
+int remainder;
 
-    a = 5;
-    b = 2;
-    remainder = a % b;
+a = 5;
+b = 2;
+remainder = a % b;
 
-    printf("remainder is %i\n", remainder);
+printf("remainder is %i\n", remainder);
+{% endhighlight %}
 
 The code above prints "1".
 
 Note that truncation is different than rounding:
 
-    int a;
-    int b;
-    int quotient;
+{% highlight cpp %}
+int a;
+int b;
+int quotient;
 
-    a = 7;
-    b = 4;
-    quotient = a / b;
+a = 7;
+b = 4;
+quotient = a / b;
 
-    print("%i / %i = %i\n", a, b, quotient);
+print("%i / %i = %i\n", a, b, quotient);
+{% endhighlight %}
 
 Even though mathematically 7 / 4 = 1.75, this code fragment prints "1" because the fractional part, .75, is truncated from the result of the division.
 
@@ -232,15 +254,17 @@ As in algebra, operators in C obey precedence rules which determine, for express
 
 For example:
 
-    int a;
-    int b;
-    int c;
+{% highlight cpp %}
+int a;
+int b;
+int c;
 
-    a = 3;
-    b = 4;
-    c = 5;
+a = 3;
+b = 4;
+c = 5;
 
-    printf("%i\n", a + b * c);
+printf("%i\n", a + b * c);
+{% endhighlight %}
 
 This code prints the output
 
@@ -250,7 +274,9 @@ because multiplication takes precedence over addition. In general, the multiplic
 
 You can (and should) use parentheses to explicitly force the evaluation order you intend. For example, if the last line of the code snippet above was
 
-    printf("%i\n", (a + b) * c);
+{% highlight cpp %}
+printf("%i\n", (a + b) * c);
+{% endhighlight %}
 
 then the output would be
 
