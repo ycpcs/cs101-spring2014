@@ -18,26 +18,29 @@ You can think of the whlie loop as being a simplified for loop. The for loop as 
 
 Examples of for loop and equivalent while loop:
 
-    // for loop
-    for (product = 0, count = 0; count < b; count = count + 1) {
-        product = product + a;
-    }
+{% highlight cpp %}
+// for loop
+for (product = 0, count = 0; count < b; count = count + 1) {
+    product = product + a;
+}
 
-    // while loop (note: a for loop is more appropriate in this case)
-    product = 0;
-    count = 0;
-    while (count < b) {
-        product = product + a;
-        count = count + 1;
-    }
+// while loop (note: a for loop is more appropriate in this case)
+product = 0;
+count = 0;
+while (count < b) {
+    product = product + a;
+    count = count + 1;
+}
+{% endhighlight %}
 
 While loops are most often used in situations where the number of iterations can't be predicted. For example, you might use a while loop to repeat a computation as long as the user indicates that the loop should continue:
 
-<pre>
+{% highlight cpp %}
 int keep_going = 1;
 
 while (keep_going == 1) {
-	// <i>computation</i>
+	// computation would go here
+	...
 
 	int answer;
 	printf("Continue? (1 for yes, 0 for no) ");
@@ -46,7 +49,7 @@ while (keep_going == 1) {
 		keep_going = 0;
 	}
 }
-</pre>
+{% endhighlight %}
 
 Nesting an if statement in a loop
 =================================
@@ -55,19 +58,21 @@ Sometimes you may want to write a loop in which particular executions of the loo
 
 For example, here is a code fragment that prints a "ruler" of a specified length using text characters, where every 10th character is a vertical bar ("|"), while all of the other characters are hyphens ("-"):
 
-    int length;
-    int i;
+{% highlight cpp %}
+int length;
+int i;
 
-    printf("How long should the ruler be? ");
-    scanf("%i", &length);
-    for (i = 1; i <= length; i++) {
-        if (i % 10 == 0) {
-            printf("|");
-        } else {
-            printf("-");
-        }
+printf("How long should the ruler be? ");
+scanf("%i", &length);
+for (i = 1; i <= length; i++) {
+    if (i % 10 == 0) {
+        printf("|");
+    } else {
+        printf("-");
     }
-    printf("\n");
+}
+printf("\n");
+{% endhighlight %}
 
 Example run (user input in **bold**):
 
@@ -95,21 +100,23 @@ Conventions for indentation:
 
 Example:
 
-    int main(void)
-    {
-        int n, sum, count;
+{% highlight cpp %}
+int main(void)
+{
+    int n, sum, count;
 
-        printf("Enter an integer: ");
-        scanf("%i", &n);
+    printf("Enter an integer: ");
+    scanf("%i", &n);
 
-        for (count = 0, sum = 0; count < n; count = count + 1) {
-            sum = sum + count;
-        }
-
-        printf("sum of 1..%i is %i\n", n, sum);
-
-        return 0;
+    for (count = 0, sum = 0; count < n; count = count + 1) {
+        sum = sum + count;
     }
+
+    printf("sum of 1..%i is %i\n", n, sum);
+
+    return 0;
+}
+{% endhighlight %}
 
 Note how the statement inside the body of the loop is indented two levels.
 
@@ -117,12 +124,14 @@ Use the tab key to indent.
 
 Opinions vary about how to place the curly braces surrounding the body of a loop. Alternate style:
 
-    for (count = 0, sum = 0; count < n; count = count + 1)
-    {
-        sum = sum + count;
-    }
+{% highlight cpp %}
+for (count = 0, sum = 0; count < n; count = count + 1)
+{
+    sum = sum + count;
+}
+{% endhighlight %}
 
-Either style is fine - just be consistent.
+Either style is fine &mdash; just be consistent.
 
 Identifier naming
 -----------------
@@ -151,4 +160,4 @@ Examples:
     product
     highTemp
 
-Again, both styles are fine - just be consistent.
+Again, both styles are fine &mdash; just be consistent.
