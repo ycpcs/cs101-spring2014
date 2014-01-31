@@ -3,7 +3,7 @@ layout: default
 title: Syllabus
 ---
 
-CS 101 - Fundamentals of Computer Science I
+CS 101 - Introduction to Computer Science I
 ===========================================
 
 **Spring 2014**
