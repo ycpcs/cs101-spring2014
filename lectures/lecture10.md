@@ -10,12 +10,14 @@ So far, we have looked at one-dimensional arrays, where each element is accessed
 
 A multidimensional array is one in which the elements (variables) in the array are accessed using multiple index values. For example, a two-dimensional array has its elements arranged like a grid. For example:
 
-    #define NUM_STUDENTS 3
-    #define NUM_QUIZZES 2
+{% highlight cpp %}
+#define NUM_STUDENTS 3
+#define NUM_QUIZZES 2
 
-    ...
+...
 
-    double quiz[NUM_STUDENTS][NUM_QUIZZES];
+double quiz[NUM_STUDENTS][NUM_QUIZZES];
+{% endhighlight %}
 
 In this example, the array quiz has two dimensions. Because **NUM\_STUDENTS** is 3 and **NUM\_QUIZZES** is 2, the size of the array is 3x2. By convention, we think of the first dimension of a two-dimensional array as representing rows, and the second dimension as representing columns.
 
@@ -31,44 +33,48 @@ Because there are 3 rows and 2 columns, the array contains 6 elements.
 
 We could use this array to store multiple quiz grades for multiple students. I.e., if **student** is an integer index value in the range 0..2 representing a particular student, and **quiz\_num** is an integer index value in the range 0..1 representing a particular quiz, then
 
-    quiz[student][quiz_num]
+{% highlight cpp %}
+quiz[student][quiz_num]
+{% endhighlight %}
 
 is a **double** variable recording a particular quiz score.
 
 Here is what a program to store quiz grades for multiple students, and then compute each student's quiz average, might look like:
 
-    #include <stdio.h>
+{% highlight cpp %}
+#include <stdio.h>
 
-    #define NUM_STUDENTS 3
-    #define NUM_QUIZZES 2
+#define NUM_STUDENTS 3
+#define NUM_QUIZZES 2
 
-    int main(void)
-    {
-        double quiz[NUM_STUDENTS][NUM_QUIZZES];
+int main(void)
+{
+    double quiz[NUM_STUDENTS][NUM_QUIZZES];
 
-        int j, i;
+    int j, i;
 
-        // Allow the user to enter the quiz grade data
-        for (j = 0; j < NUM_STUDENTS; j++) {
-            printf("Enter grades for student %i:\n", j + 1);
+    // Allow the user to enter the quiz grade data
+    for (j = 0; j < NUM_STUDENTS; j++) {
+        printf("Enter grades for student %i:\n", j + 1);
 
-            for (i = 0; i < NUM_QUIZZES; i++) {
-                printf("Quiz %i grade: ", i + 1);
-                scanf("%lf", &quiz[j][i]);
-            }
+        for (i = 0; i < NUM_QUIZZES; i++) {
+            printf("Quiz %i grade: ", i + 1);
+            scanf("%lf", &quiz[j][i]);
         }
-
-        // Now compute each student's quiz average
-        for (j = 0; j < NUM_STUDENTS; j++) {
-            double quiz_average;
-
-            // Code to compute the average would go here...
-
-            printf("Student %i's average is %.2lf\n", j + 1, quiz_average);
-        }
-
-        return 0;
     }
+
+    // Now compute each student's quiz average
+    for (j = 0; j < NUM_STUDENTS; j++) {
+        double quiz_average;
+
+        // Code to compute the average would go here...
+
+        printf("Student %i's average is %.2lf\n", j + 1, quiz_average);
+    }
+
+    return 0;
+}
+{% endhighlight %}
 
 Example run (user input in **bold**):
 

@@ -10,14 +10,16 @@ Very often it is useful to nest one loop inside another.
 
 Say we want to print the multiplication table: every product of the integers 0 .. 9:
 
-    int row, col;
+{% highlight cpp %}
+int row, col;
 
-    for (row = 0; row <= 9; row = row + 1) {
-        for (col = 0; col <= 9; col = col + 1) {
-            printf("%3i", row * col);
-        }
-        printf("\n");
+for (row = 0; row <= 9; row = row + 1) {
+    for (col = 0; col <= 9; col = col + 1) {
+        printf("%3i", row * col);
     }
+    printf("\n");
+}
+{% endhighlight %}
 
 This code produces the following output:
 
@@ -56,23 +58,27 @@ The idea is that the first backslash "escapes" the following character. The esca
 Using scanf to read a single character
 ======================================
 
-    char ch;
+{% highlight cpp %}
+char ch;
 
-    printf("enter a character: ");
-    scanf(" %c", &ch);
+printf("enter a character: ");
+scanf(" %c", &ch);
 
-    printf("you entered '%c'\n", ch);
+printf("you entered '%c'\n", ch);
+{% endhighlight %}
 
 This can be useful for prompting the user to answer a yes or no question:
 
-    char answer;
+{% highlight cpp %}
+char answer;
 
-    do {
-        // some code...
+do {
+    // some code...
 
-        printf("Try again (y or n)? ");
-        scanf(" %c", &answer);
-    } while (answer == 'y' || answer == 'Y');
+    printf("Try again (y or n)? ");
+    scanf(" %c", &answer);
+} while (answer == 'y' || answer == 'Y');
+{% endhighlight %}
 
 Triangular loops
 ================
@@ -81,17 +87,19 @@ In the nested loops we have discussed so far, the inner loop in a pair of nested
 
 In a triangular loop, the number of iterations the inner loop executes depends on the value of the outer loop's loop variable. For example:
 
-    int height, j, i;
+{% highlight cpp %}
+int height, j, i;
 
-    printf("height of triangle: ");
-    scanf("%i", &height);
+printf("height of triangle: ");
+scanf("%i", &height);
 
-    for (j = 0; j < height; j++) {
-        for (i = 0; i <= j; i++) {
-            printf("*");
-        }
-        printf("\n");
+for (j = 0; j < height; j++) {
+    for (i = 0; i <= j; i++) {
+        printf("*");
     }
+    printf("\n");
+}
+{% endhighlight %}
 
 Example run (user input in **bold**):
 

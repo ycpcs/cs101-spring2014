@@ -111,51 +111,57 @@ Simple example:
 
 **sqrt(x)** is like a mathematical function. For a given input value, there is precisely one possible output value.
 
-    printf("%lf\n", sqrt(16.0));
+{% highlight cpp %}
+printf("%lf\n", sqrt(16.0));
+{% endhighlight %}
 
 The function call expression **sqrt(16.0)** is evaluated by calling the function with the argument 16.0 and using its return value (4.0) as the value of the function call expression.
 
 A more complex example:
 
-    #include <stdio.h>
-    #include <math.h>
+{% highlight cpp %}
+#include <stdio.h>
+#include <math.h>
 
-    int main(void)
-    {
-        double area_in_square_feet, side;
+int main(void)
+{
+    double area_in_square_feet, side;
 
-        printf("Area in square feet? ");
-        scanf("%lf", &area_in_square_feet);
+    printf("Area in square feet? ");
+    scanf("%lf", &area_in_square_feet);
 
-        side = sqrt(area_in_square_feet);
+    side = sqrt(area_in_square_feet);
 
-        printf("%f square feet fit in a square %f feet on a side\n", 
-                area_in_square_feet, side);
+    printf("%f square feet fit in a square %f feet on a side\n", 
+            area_in_square_feet, side);
 
-        return 0;
-    }
+    return 0;
+}
+{% endhighlight %}
 
 Some functions do not return a value. Such function calls are written as *statements* rather than expressions. In other words, a call to a function that does not return a value cannot be an expression.
 
 E.g., the **exit()** function, which causes the program to terminate immediately:
 
-    #include <stdio.h>
-    #include <stdlib.h>
+{% highlight cpp %}
+#include <stdio.h>
+#include <stdlib.h>
 
-    int main()
-    {
-        int val;
+int main(void)
+{
+    int val;
 
-        printf("Enter a non-negative value: ");
-        scanf("%i", &val);
+    printf("Enter a non-negative value: ");
+    scanf("%i", &val);
 
-        if (val < 0) {
-            printf("Invalid value: %i\n", val);
-            exit(1);
-        }
-
-        ...etc...
+    if (val < 0) {
+        printf("Invalid value: %i\n", val);
+        exit(1);
     }
+
+    ...etc...
+}
+{% endhighlight %}
 
 Writing your own functions
 ==========================
@@ -190,20 +196,22 @@ The *statements* are simply a list of statements which define the computation th
 
 For example, the **draw\_rectangle()** function might be:
 
-    void draw_rectangle(int width, int height)
-    {
-        int j, i;
+{% highlight cpp %}
+void draw_rectangle(int width, int height)
+{
+    int j, i;
 
-        for (j = 1; j <= height; j++) {
-            /* Draw a line of * characters */
+    for (j = 1; j <= height; j++) {
+        /* Draw a line of * characters */
 
-            for (i = 1; i <= width; i++) {
-                printf("*");
-            }
-
-            printf("\n");
+        for (i = 1; i <= width; i++) {
+            printf("*");
         }
+
+        printf("\n");
     }
+}
+{% endhighlight %}
 
 Now we can use our **draw\_rectangle()** function whenever we need to draw a rectangle of any width and height.
 
@@ -230,6 +238,8 @@ Function Prototypes
 
 A *function prototype* (also called a *function declaration*) looks like a function, except that the body of the function is replaced by a semicolon. E.g.:
 
-    void draw_rectangle(int width, int height);
+{% highlight cpp %}
+void draw_rectangle(int width, int height);
+{% endhighlight %}
 
 is a function prototype for a function called **draw\_rectangle** that takes two **int** arguments, and does not return a value (is a **void** function). A function prototype is a signal to the compiler that the function described by the prototype exists somewhere else in the program.

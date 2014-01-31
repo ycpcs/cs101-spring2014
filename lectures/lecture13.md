@@ -10,15 +10,17 @@ Reading Values from Array Parameters
 
 Let's consider a function to compute the average of the element values in an array of double:
 
-    double computeAverage(double array[], int size)
-    {
-        double sum = 0.0;
-        for (int i = 0; i < size; i++) {
-            sum += array[i];
-        }
-
-        return sum / size;
+{% highlight cpp %}
+double computeAverage(double array[], int size)
+{
+    double sum = 0.0;
+    for (int i = 0; i < size; i++) {
+        sum += array[i];
     }
+
+    return sum / size;
+}
+{% endhighlight %}
 
 Note a peculiarity - the parameter variable called array is declared without a specific number of elements. This is an intentional feature of C - it allows you to write functions that will work with arrays of any possible length. So, we will be able to call the **computeAverage()** function on **double** arrays of any size.
 
@@ -28,9 +30,11 @@ Let's consider some tests for this function. One thing that we will need to do i
 
 For example:
 
-    double testArray1[4] = {1.0, 3.0, 1.0, 3.0};
+{% highlight cpp %}
+double testArray1[4] = {1.0, 3.0, 1.0, 3.0};
 
-    printf("%lf = %lf\n",2.0,computeAverage(testArray1, 4));
+printf("%lf = %lf\n",2.0,computeAverage(testArray1, 4));
+{% endhighlight %}
 
 The initializer is a comma-separated list of values enclosed in curly braces. Array initializers are useful for assigning some initial values to the elements of an array.
 
@@ -41,23 +45,27 @@ What happens if a function that takes an array parameter assigns new values to o
 
 Example:
 
-    void negateElements(double array[], int size)
-    {
-        for (int i = 0; i < size; i++) {
-            array[i] *= -1;
-        }
+{% highlight cpp %}
+void negateElements(double array[], int size)
+{
+    for (int i = 0; i < size; i++) {
+        array[i] *= -1;
     }
+}
+{% endhighlight %}
 
 The question is - how is the value of an array variable passed to a function with an array parameter? For the kinds of variables we have seen so far, the value of the variable is copied into the parameter variable in the called function. This is known as *pass-by-value* (i.e. only the *value* is sent to the function) and is the mechanism used for individual variables.
 
 For arrays, no copying is done. Instead, passing an array works like a reference parameter - the array parameter becomes an *alias* for the array used as the argument. This is known as *pass-by-reference* (i.e. the storage location itself is sent to the function). We can see this with a test:
 
-    double testArray1[3] = {4.5, -3.6, 0.0};
+{% highlight cpp %}
+double testArray1[3] = {4.5, -3.6, 0.0};
 
-    negateElements(testArray1, 3);
+negateElements(testArray1, 3);
 
-    printf("%lf = %lf\n",-4.5, testArray1[0]);
-    printf("%lf = %lf\n", 0.0, testArray1[2]);
+printf("%lf = %lf\n",-4.5, testArray1[0]);
+printf("%lf = %lf\n", 0.0, testArray1[2]);
+{% endhighlight %}
 
 There are several reasons that array parameters work this way:
 
@@ -76,14 +84,16 @@ You can protect yourself against accidentally modifying an array parameter by ma
 
 Example:
 
-    double computeAverage(const double array[], int size)
-    {
-        double sum = 0.0;
-        for (int i = 0; i < size; i++) {
-            sum += array[i];
-        }
-        return sum / size;
+{% highlight cpp %}
+double computeAverage(const double array[], int size)
+{
+    double sum = 0.0;
+    for (int i = 0; i < size; i++) {
+        sum += array[i];
     }
+    return sum / size;
+}
+{% endhighlight %}
 
 You would read the type of the first parameter as
 
@@ -100,24 +110,26 @@ Multidimensional arrays can be passed to a function. Although the number of elem
 
 Example:
 
-    #define NUM_COLUMNS 10
+{% highlight cpp %}
+#define NUM_COLUMNS 10
 
-    double maximumRowSum(double table[][NUM_COLUMNS], int numRows)
-    {
-        int j, i;
-        double sum, max;
+double maximumRowSum(double table[][NUM_COLUMNS], int numRows)
+{
+    int j, i;
+    double sum, max;
 
-        for (j = 0; j < numRows; j++) {
-            sum = 0.0;
-            for (i = 0; i < NUM_COLUMNS; i++) {
-                sum += table[j][i];
-            }
-            if (j == 0 || sum > max) {
-                max = sum;
-            }
+    for (j = 0; j < numRows; j++) {
+        sum = 0.0;
+        for (i = 0; i < NUM_COLUMNS; i++) {
+            sum += table[j][i];
         }
-
-        return max;
+        if (j == 0 || sum > max) {
+            max = sum;
+        }
     }
+
+    return max;
+}
+{% endhighlight %}
 
 As with one-dimensional arrays, multidimensional arrays are *passed by reference*, so assignments to the array's elements made within the function change the elements of the array passed to the function. Note that any parameters with primitive types (**int**, **double**, etc.) are still *passed-by-value*.

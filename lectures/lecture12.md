@@ -59,9 +59,11 @@ Function calls
 
 Compute the factorial of 13:
 
-    int result;
-    result = factorial(13);
-    printf("factorial of 13 is %i\n", result);
+{% highlight cpp %}
+int result;
+result = factorial(13);
+printf("factorial of 13 is %i\n", result);
+{% endhighlight %}
 
 What is happening?
 
@@ -69,19 +71,23 @@ What is happening?
 
 Compute the sum of a range of integer values entered by the user:
 
-    int min, max, sum;
-    scanf("%i %i", &min, &max);
-    sum = sumRange(min, max);
-    printf("sum is %i\n", sum);
+{% highlight cpp %}
+int min, max, sum;
+scanf("%i %i", &min, &max);
+sum = sumRange(min, max);
+printf("sum is %i\n", sum);
+{% endhighlight %}
 
 If the user's age is odd, print a message:
 
-    int age;
-    scanf("%i", &age);
+{% highlight cpp %}
+int age;
+scanf("%i", &age);
 
-    if (isOdd(age)) {
-        printf("your age is odd\n");
-    }
+if (isOdd(age)) {
+    printf("your age is odd\n");
+}
+{% endhighlight %}
 
 Implementing Functions that Return a Value
 ==========================================
@@ -94,33 +100,39 @@ Examples:
 
 **sumRange** function:
 
-    int sumRange(int min, int max) {
-        int sum = 0;
-        for (int i = min; i <= max; i++) {
-            sum += i;
-        }
-
-        return sum;
+{% highlight cpp %}
+int sumRange(int min, int max) {
+    int sum = 0;
+    for (int i = min; i <= max; i++) {
+        sum += i;
     }
+
+    return sum;
+}
+{% endhighlight %}
 
 **isOdd** function:
 
-    int isOdd(int value) {
-        if ((value % 2) == 1) {
-            return 1;
-        } 
-        else {
-            return 0;
-        }
+{% highlight cpp %}
+int isOdd(int value) {
+    if ((value % 2) == 1) {
+        return 1;
+    } 
+    else {
+        return 0;
     }
+}
+{% endhighlight %}
 
 **Important**: It is critical that when you write a function that returns a value, it is guaranteed to return a value. For example, consider a buggy version of **isOdd**:
 
-    int isOdd(int value) {
-        if ((value % 2) == 1) {
-            return 1;
-        }
+{% highlight cpp %}
+int isOdd(int value) {
+    if ((value % 2) == 1) {
+        return 1;
     }
+}
+{% endhighlight %}
 
 This version of **isOdd** does not return a value if the parameter is even. When the program runs, if an even value is passed to the function, the value returned by the function will be unpredictable, and strange behavior may result.
 
@@ -131,22 +143,23 @@ It is very important to *test* your functions to make sure they work correctly.
 
 One way to test is to use some logic with **printf**'s to check that functions are returning the expected value for particular input. Note: be careful when checking floating point numbers for *equality* as roundoff errors can occur. For example, to test the factorial function
 
-    #include <stdio.h>
+{% highlight cpp %}
+#include <stdio.h>
 
-    int factorial(int value);
+int factorial(int value);
 
-    int main(){
+int main(void) {
 
-        if (6 == factorial(3)) {
-            printf("Test passed 6 = %i\n",factorial(3));
-        }
-        else {
-            printf("Test failed\n 6 != %i\n",factorial(3));
-        }
-
-        return 0;
+    if (6 == factorial(3)) {
+        printf("Test passed 6 = %i\n",factorial(3));
+    } else {
+        printf("Test failed\n 6 != %i\n",factorial(3));
     }
 
-    int factorial(int value) {
-        ...
-    }
+    return 0;
+}
+
+int factorial(int value) {
+    ...
+}
+{% endhighlight %}

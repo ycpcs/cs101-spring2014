@@ -10,19 +10,23 @@ Arrays
 
 For example, say we want to figure out our average for some number of quiz grades. If we know how many quiz grades there are, we can just store each grade in a separate variable:
 
-    double quiz1, quiz2, quiz3;
-    double avg;
+{% highlight cpp %}
+double quiz1, quiz2, quiz3;
+double avg;
 
-    printf("enter 3 quiz grades: ");
-    scanf("%lf %lf %lf", &quiz1, &quiz2, &quiz3);
-    avg = (quiz1 + quiz2 + quiz3) / 3;
-    printf("average is %f\n", avg);
+printf("enter 3 quiz grades: ");
+scanf("%lf %lf %lf", &quiz1, &quiz2, &quiz3);
+avg = (quiz1 + quiz2 + quiz3) / 3;
+printf("average is %f\n", avg);
+{% endhighlight %}
 
 If we ever need to handle more (or less) than 3 quiz grades, we will have to modify the program.
 
 Notice how the variables storing the quiz grades were defined:
 
-    double quiz1, quiz2, quiz3;
+{% highlight cpp %}
+double quiz1, quiz2, quiz3;
+{% endhighlight %}
 
 These variables differ only in which particular quiz number they represent.
 
@@ -30,19 +34,23 @@ What we really need is a way to represent an arbitrary number of variables. Arra
 
 Here is a slightly modified program:
 
-    double quiz[3];
-    double avg;
+{% highlight cpp %}
+double quiz[3];
+double avg;
 
-    printf("enter 3 quiz grades: ");
-    scanf("%lf %lf %lf", &quiz[0], &quiz[1], &quiz[2]);
-    avg = (quiz[0] + quiz[1] + quiz[2]) / 3;
-    printf("average is %f\n", avg);
+printf("enter 3 quiz grades: ");
+scanf("%lf %lf %lf", &quiz[0], &quiz[1], &quiz[2]);
+avg = (quiz[0] + quiz[1] + quiz[2]) / 3;
+printf("average is %f\n", avg);
+{% endhighlight %}
 
 The only difference is that we replaced the three individual variables (*quiz1*, *quiz2*, *quiz3*) with a single array variable called *quiz*.
 
 Consider the first variable declaration:
 
-    double quiz[3];
+{% highlight cpp %}
+double quiz[3];
+{% endhighlight %}
 
 You should read this as
 
@@ -60,42 +68,46 @@ Using the square brackets to refer to an element of an array is known as the *su
 
 Here is an even better program:
 
-    #define MAX 50
+{% highlight cpp %}
+#define MAX 50
 
-    int main(void)
+int main(void)
+{
+    double quiz[MAX];
+    double sum;
+    int num_quizzes, i;
+    printf("How many quizzes? ");
+    scanf("%i", &num_quizzes);
+    if (num_quizzes > MAX)
     {
-        double quiz[MAX];
-        double sum;
-        int num_quizzes, i;
-        printf("How many quizzes? ");
-        scanf("%i", &num_quizzes);
-        if (num_quizzes > MAX)
-        {
-            printf("sorry, the maximum number of quiz grades I can handle %i\n",MAX);
-            return 1;
-        }
-
-        /* Read the quiz grades */
-        printf("enter the quiz grades:\n");
-        for (i = 0; i < num_quizzes; i++) 
-        {
-            scanf("%lf", &quiz[i]);
-        }
-
-        /* Compute the average */
-        sum = 0.0;
-        for (i = 0; i < num_quizzes; i++) 
-        {
-            sum += quiz[i];
-        }
-        printf("Average is %f\n", (sum / num_quizzes));
-
-        return 0;
+        printf("sorry, the maximum number of quiz grades I can handle %i\n",MAX);
+        return 1;
     }
+
+    /* Read the quiz grades */
+    printf("enter the quiz grades:\n");
+    for (i = 0; i < num_quizzes; i++) 
+    {
+        scanf("%lf", &quiz[i]);
+    }
+
+    /* Compute the average */
+    sum = 0.0;
+    for (i = 0; i < num_quizzes; i++) 
+    {
+        sum += quiz[i];
+    }
+    printf("Average is %f\n", (sum / num_quizzes));
+
+    return 0;
+}
+{% endhighlight %}
 
 Note the declaration of the *symbolic constant* called MAX:
 
-    #define MAX 50
+{% highlight cpp %}
+#define MAX 50
+{% endhighlight %}
 
 Anywhere in the program that **MAX** is used, it will be replaced by 50. Symbolic constants are very useful because they allow you to define limits in the program and refer to those limits by name. In this case, we're making an assumption that we will never need to average more than 50 quiz grades. If this assumption ever needs to change, then we can simply redefine **MAX** to reflect the new value (and recompile the program).
 
@@ -117,16 +129,18 @@ Arrays and Uninitialized Elements
 
 What is wrong with the following code?
 
-    double temp[3];
-    int i;
+{% highlight cpp %}
+double temp[3];
+int i;
 
-    temp[0] = 48.0;
-    temp[1] = 52.0;
+temp[0] = 48.0;
+temp[1] = 52.0;
 
-    for (i = 0; i < 3; i++)
-    {
-        printf("%lf\n", temp[i]);
-    }
+for (i = 0; i < 3; i++)
+{
+    printf("%lf\n", temp[i]);
+}
+{% endhighlight %}
 
 Just like all other kinds of variables, elements of an array are *not* initialized automatically. That means if you try to use the value of an uninitialized array element, the program will get a garbage value, and unpredictable behavior may result.
 
@@ -139,6 +153,8 @@ Initializing an array
 
 An array can be initialized, so that the elements have specified initial values. For example:
 
-    double temp[3] = { 52.5, 63.2, 53.9 };
+{% highlight cpp %}
+double temp[3] = { 52.5, 63.2, 53.9 };
+{% endhighlight %}
 
 When an initializer is used, any elements of the array not explicitly initialized will be set to zero.

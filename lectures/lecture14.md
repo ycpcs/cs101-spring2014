@@ -12,9 +12,11 @@ Each variable has an *address* naming its storage location. Different variables 
 
 Addresses are really just integers. For example, consider the following code:
 
-    int a;
+{% highlight cpp %}
+int a;
 
-    a = 6;
+a = 6;
+{% endhighlight %}
 
 Let's say that when the program runs, the variable **a** has the address **1000000**. When the compiler generates machine instructions for the statement assigning the value 6 to **a**, the instruction will have the form
 
@@ -31,7 +33,9 @@ A *pointer variable* is a variable in which the the program will store the addre
 
 Example:
 
-    int *p;
+{% highlight cpp %}
+int *p;
+{% endhighlight %}
 
 This declaration defines a variable called **p** in which we may store the address of a variable whose type is **int**. We read this declaration as
 
@@ -54,10 +58,12 @@ A variable isn't very useful unless we can store a value in it. Since pointer va
 
 Example:
 
-    int *p;
-    int a;
+{% highlight cpp %}
+int *p;
+int a;
 
-    p = &a; // store the address of a in p
+p = &a; // store the address of a in p
+{% endhighlight %}
 
 Following the assignment of **a**'s address to **p**, we say that
 
@@ -86,26 +92,30 @@ is the address of the variable that **p** points to, and
 
 Example:
 
-    int *p;
-    int a;
+{% highlight cpp %}
+int *p;
+int a;
 
-    p = &a; // store address of a in p
+p = &a; // store address of a in p
 
-    a = 42;
-    printf("%i\n", *p); // prints 42
+a = 42;
+printf("%i\n", *p); // prints 42
+{% endhighlight %}
 
 Because **p** contained the address of **a** at the time of the **printf** statement, and because **a** contained the value 42, printing **p** resulted in the output **42** being printed.
 
 We can also *modify* the value of a variable if we have a pointer to it:
 
-    int *p;
-    int a;
+{% highlight cpp %}
+int *p;
+int a;
 
-    p = &a;
+p = &a;
 
-    *p = 17;
+*p = 17;
 
-    printf("%i\n", a); // prints 17
+printf("%i\n", a); // prints 17
+{% endhighlight %}
 
 Even though there is no direct assignment of a value to **a**, the assignment to **\*p** serves as an *indirect* assignment to **a**, since **p** points to **a**.
 
@@ -116,16 +126,18 @@ Pointer values are values just like any other kind of value. So, if we use an as
 
 Example:
 
-    int *p;
-    int *q;
-    int a;
+{% highlight cpp %}
+int *p;
+int *q;
+int a;
 
-    p = &a; // make p point to a
-    q = p;  // make q point to the same variable as p
-    // (*) see diagram below
+p = &a; // make p point to a
+q = p;  // make q point to the same variable as p
+// (*) see diagram below
 
-    a = 121;
-    printf("%i\n", *q); // prints 121
+a = 121;
+printf("%i\n", *q); // prints 121
+{% endhighlight %}
 
 Here is a diagram showing the points-to relationships just after the assignment **q = p**:
 
@@ -144,25 +156,27 @@ For example, as we saw in [Lab 11](../labs/lab11.html), a arbitrary color can be
 
 Here is an example program to demonstrate this idea:
 
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <time.h>
+{% highlight cpp %}
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-    void make_rand_color(int *rp, int *gp, int *bp);
+void make_rand_color(int *rp, int *gp, int *bp);
 
-    int main(void) {
-        srand(time(0));
-        int r, g, b;
-        make_rand_color(&r, &g, &b);
-        printf("Your color is #%2x%2x%2x\n", r, g, b);
-        return 0;
-    }
+int main(void) {
+    srand(time(0));
+    int r, g, b;
+    make_rand_color(&r, &g, &b);
+    printf("Your color is #%2x%2x%2x\n", r, g, b);
+    return 0;
+}
 
-    void make_rand_color(int *rp, int *gp, int *bp) {
-        *rp = rand() % 256;
-        *gp = rand() % 256;
-        *bp = rand() % 256;
-    }
+void make_rand_color(int *rp, int *gp, int *bp) {
+    *rp = rand() % 256;
+    *gp = rand() % 256;
+    *bp = rand() % 256;
+}
+{% endhighlight %}
 
 In the **main** function, we pass the addresses of the variables **r**, **g**, and **b** to the **make\_rand\_color** function, which receives them as the parameters **rp**, **gp**, and **bp**. The **make\_rand\_color** function then assigns random values to the variables pointed to by its parameters.
 
