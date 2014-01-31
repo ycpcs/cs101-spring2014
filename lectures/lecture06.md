@@ -67,16 +67,18 @@ The *update* updates the values of one or more variables. It is generally used t
 
 Here's how we might implement our multiplication algorithm using a for loop. Each stage of the algorithm is translated into one of the components of the for loop.
 
-    int a, b, product, count;
+{% highlight cpp %}
+int a, b, product, count;
 
-    printf("Enter two non-negative numbers: ");
-    scanf("%i %i", &a, &b);
+printf("Enter two non-negative numbers: ");
+scanf("%i %i", &a, &b);
 
-    for (product = 0, count = 0; count < b; count = count + 1) {
-        product = product + a;
-    }
+for (product = 0, count = 0; count < b; count = count + 1) {
+    product = product + a;
+}
 
-    printf("The product of %i and %i is %i\n", a, b, product);
+printf("The product of %i and %i is %i\n", a, b, product);
+{% endhighlight %}
 
 Loops can execute 0 iterations
 ------------------------------
@@ -97,9 +99,11 @@ Often, all you will need to know is the number of times the body of the loop sho
 Count up from 1 to n
 --------------------
 
-    for (int i = 1; i <= n; i++) {
-        ...
-    }
+{% highlight cpp %}
+for (int i = 1; i <= n; i++) {
+    ...
+}
+{% endhighlight %}
 
 Recall that **i++** is a statement that increases the value of the variable **i** by 1.
 
@@ -108,18 +112,22 @@ Count up from 0 to n-1
 
 Sometimes it is better to count starting at 0 rather than 1. In this case, if the loop body executes **n** times, in the last execution of the loop body the loop variable **i** will be **n**-1.
 
-    for (int i = 0; i < n; i++) {
-        ...
-    }
+{% highlight cpp %}
+for (int i = 0; i < n; i++) {
+    ...
+}
+{% endhighlight %}
 
 Counting down from n to 1
 -------------------------
 
 Sometimes you need to count down rather than counting up.
 
-    for (int i = n; i >= 1; i--) {
-        ...
-    }
+{% highlight cpp %}
+for (int i = n; i >= 1; i--) {
+    ...
+}
+{% endhighlight %}
 
 Recall that **i--** is a statement which decreases the value stored in the variable **i** by 1.
 
@@ -128,27 +136,33 @@ Counting down from n-1 to 0
 
 You might need to count down to 0 rather than 1. Note that if you want the body of the loop to execute exactly **n** times, then you must start at **n**-1.
 
-    for (int i = n-1; i >= 0; i--) {
-        ...
-    }
+{% highlight cpp %}
+for (int i = n-1; i >= 0; i--) {
+    ...
+}
+{% endhighlight %}
 
 Count from a min to max
 -----------------------
 
 Counting from an arbitrary **min** value up to an arbitrary **max** value.
 
-    for (int i = min; i <= max; i++) {
-        ...
-    }
+{% highlight cpp %}
+for (int i = min; i <= max; i++) {
+    ...
+}
+{% endhighlight %}
 
 Count from 1 to n by increments
 -------------------------------
 
 Sometimes you may need to skip every **k** values. For example, say we want to generate all of the odd integers from 1 to **max**.
 
-    for (int i = 1; i <= max; i += 2) {
-        ...
-    }
+{% highlight cpp %}
+for (int i = 1; i <= max; i += 2) {
+    ...
+}
+{% endhighlight %}
 
 Note that **i += 2** is a statement which increases the value of the variable **i** by 2.
 
@@ -161,12 +175,14 @@ You can start with any of the loop recipes described above.
 
 It is critical that the accumulator variable is initialized to an appropriate value, usually 0, before the loop starts.
 
-    double sum = 0.0; // the accumulator
-    for (int i = 1; i <= n; i++) {
-        double term = ...;
+{% highlight cpp %}
+double sum = 0.0; // the accumulator
+for (int i = 1; i <= n; i++) {
+    double term = ...;
 
-        sum += term;
-    }
+    sum += term;
+}
+{% endhighlight %}
 
 Note that **sum += term** is a statement which adds **term** to **sum**, and stores the result back in **sum**. So, **sum** increases by an amount equal to **term**.
 
@@ -186,12 +202,14 @@ We can see two important requirements:
 
 So, let's use the **count from 1 to n** and **computing a sum of n terms** recipes. Here's out basic starting point:
 
-    double sum = 0.0; // the accumulator
-    for (int i = 1; i <= n; i++) {
-        double term = ...;
+{% highlight cpp %}
+double sum = 0.0; // the accumulator
+for (int i = 1; i <= n; i++) {
+    double term = ...;
 
-        sum += term;
-    }
+    sum += term;
+}
+{% endhighlight %}
 
 The only information that is missing is the value of the term. How can we figure out how to compute the term?
 
@@ -230,304 +248,64 @@ Start with what you know: the value of **i**, the loop counter variable. Let's s
 
 We can observe that each term is 1/**denom**, which **denom** is 1, 3, 5, 7, etc. So, if we could compute the value of **denom**, we would be closer to computing **term**. What we want, then, is
 
-> <table>
-> <col  />
-> <col  />
-> <thead>
-> <tr class="header">
-> <th align="left">i</th>
-> <th align="left">denom</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">1</td>
-> <td align="left"><blockquote>
-> <p>1</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">2</td>
-> <td align="left"><blockquote>
-> <p>3</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">3</td>
-> <td align="left"><blockquote>
-> <p>5</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">4</td>
-> <td align="left"><blockquote>
-> <p>7</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">5</td>
-> <td align="left"><blockquote>
-> <p>9</p>
-> </blockquote></td>
-> </tr>
-> </tbody>
-> </table>
+> i   | denom
+> --- | -----
+> 1   | 1
+> 2   | 3
+> 3   | 5
+> 4   | 7
+> 5   | 9
 
 How do we get **denom**? We can *derive* it from **i**, our counter variable. First, observe that **denom** is increasing by 2 on each iteration. So, its value is about twice that of **i**. Let's see how **denom** might be related to **i**\*2:
 
-> <table>
-> <col  />
-> <col  />
-> <col  />
-> <thead>
-> <tr class="header">
-> <th align="left">i</th>
-> <th align="left">denom</th>
-> <th align="left">i*2</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">1</td>
-> <td align="left"><blockquote>
-> <p>1</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>2</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">2</td>
-> <td align="left"><blockquote>
-> <p>3</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>4</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">3</td>
-> <td align="left"><blockquote>
-> <p>5</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>6</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">4</td>
-> <td align="left"><blockquote>
-> <p>7</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>8</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">5</td>
-> <td align="left"><blockquote>
-> <p>9</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>10</p>
-> </blockquote></td>
-> </tr>
-> </tbody>
-> </table>
+> i   | denom | i*2
+> --- | ----- | ---
+> 1   | 1     | 2
+> 2   | 3     | 4
+> 3   | 5     | 6
+> 4   | 7     | 8
+> 5   | 9     | 10
 
 Now we can see that **i**\*2 is always exactly one greater than **denom**. So, if we subtract 1, we get a value equal to our desired **denom** value:
 
-> <table>
-> <col  />
-> <col  />
-> <col  />
-> <col  />
-> <thead>
-> <tr class="header">
-> <th align="left">i</th>
-> <th align="left">denom</th>
-> <th align="left">i*2</th>
-> <th align="left">(i*2)-1</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">1</td>
-> <td align="left"><blockquote>
-> <p>1</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>2</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>1</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">2</td>
-> <td align="left"><blockquote>
-> <p>3</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>4</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>3</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">3</td>
-> <td align="left"><blockquote>
-> <p>5</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>6</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>5</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">4</td>
-> <td align="left"><blockquote>
-> <p>7</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>8</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>7</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">5</td>
-> <td align="left"><blockquote>
-> <p>9</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>10</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>9</p>
-> </blockquote></td>
-> </tr>
-> </tbody>
-> </table>
+> i   | denom | i*2 | (i*2) - 1
+> --- | ----- | --- | ---------
+> 1   | 1     | 2   | 1
+> 2   | 3     | 4   | 3
+> 3   | 5     | 6   | 5
+> 4   | 7     | 8   | 7
+> 5   | 9     | 10  | 9
 
 Now, all that's left to consider is that each term has a sign that is positive or negative, and that the signs alternate with each term. Looking more closely, we see that when **i** is odd, the sign is positive, and when **i** is even, the sign is negative:
 
-> <table>
-> <col  />
-> <col  />
-> <col  />
-> <col  />
-> <col  />
-> <thead>
-> <tr class="header">
-> <th align="left">i</th>
-> <th align="left">denom</th>
-> <th align="left">i*2</th>
-> <th align="left">(i*2)-1</th>
-> <th align="left">sign</th>
-> </tr>
-> </thead>
-> <tbody>
-> <tr class="odd">
-> <td align="left">1</td>
-> <td align="left"><blockquote>
-> <p>1</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>2</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>1</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>+</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">2</td>
-> <td align="left"><blockquote>
-> <p>3</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>4</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>3</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>-</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">3</td>
-> <td align="left"><blockquote>
-> <p>5</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>6</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>5</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>+</p>
-> </blockquote></td>
-> </tr>
-> <tr class="even">
-> <td align="left">4</td>
-> <td align="left"><blockquote>
-> <p>7</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>8</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>7</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>-</p>
-> </blockquote></td>
-> </tr>
-> <tr class="odd">
-> <td align="left">5</td>
-> <td align="left"><blockquote>
-> <p>9</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>10</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>9</p>
-> </blockquote></td>
-> <td align="left"><blockquote>
-> <p>+</p>
-> </blockquote></td>
-> </tr>
-> </tbody>
-> </table>
+> i   | denom | i*2 | (i*2) - 1 | sign
+> --- | ----- | --- | --------- | ----
+> 1   | 1     | 2   | 1         | +
+> 2   | 3     | 4   | 3         | -
+> 3   | 5     | 6   | 5         | +
+> 4   | 7     | 8   | 7         | -
+> 5   | 9     | 10  | 9         | +
 
 We can handle this by adding an **if**/**else** statement to the loop. For odd values of **i**, we'll make the term positive, and for even values of **i**, we'll make the term negative.
 
 Now that we have planned the behavior of the loop, it is easy to customize our initial version of the loop to compute the correct values for each term:
 
-    double sum = 0.0; // the accumulator
-    for (int i = 1; i <= n; i++) {
-        double denom = (i * 2) - 1;
+{% highlight cpp %}
+double sum = 0.0; // the accumulator
+for (int i = 1; i <= n; i++) {
+    double denom = (i * 2) - 1;
 
-        double term;
-        if (i % 2 == 1) {
-            // odd, so positive
-            term = 1.0 / denom;
-        } else {
-            // even, so negative
-            term = -(1.0 / denom);
-        }
-
-        sum += term;
+    double term;
+    if (i % 2 == 1) {
+        // odd, so positive
+        term = 1.0 / denom;
+    } else {
+        // even, so negative
+        term = -(1.0 / denom);
     }
+
+    sum += term;
+}
+{% endhighlight %}
 
 If you plan your loops this way, it is generally straighforward to take one of the basic loop recipes and customize it to meet your program's needs.
