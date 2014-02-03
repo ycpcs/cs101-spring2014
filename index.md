@@ -17,10 +17,16 @@ All information about the course will be posted here.
 * [Resources](resources.html)
 * [Examples](examples/index.html)
 * [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html)
+* [Tutoring](tutoring.html)
 
 ## News
 
+* **Feb 3** - [Tutoring](tutoring.html), both in-class and drop-in evening sessions, will start Tuesday, Feb 4th.
 * **Jan 30** - The [Schedule](schedule.html) has been updated to clarify when the readings and CloudCoder exercises should be completed (*before* the class for which they are listed).
 * **Jan 28** - The [Examples](examples/index.html) page has code examples discussed in class.
 * **Jan 22** - [Assignment 1](assign/assign01.html) is due Monday, Feb 3rd by 11:59 PM.
 * **Jan 22** - Welcome back!
+
+<!-- vim:set wrap: ­-->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->
