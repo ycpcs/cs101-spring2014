@@ -12,7 +12,7 @@ Instructors:
 
 - Section 101: [David Hovemeyer](http://faculty.ycp.edu/~dhovemey/), <dhovemey@ycp.edu>, Office hours M/T/W/Th 2-3 PM, F 10-11 AM, or by arrangement
 - Sections 102, 103: Deepti Jindal, <djindal@ycp.edu>, Office hours 12PM-1PM Tues/Thurs in KEC 115
-- Sections 104, 105: Morris Miller, <mmmiller@ycp.edu>, Office hours 11:30AM-12:30 PM Tues/Thurs in [TBD]
+- Sections 104, 105: Morris Miller, <mmmiller@ycp.edu>, Office hours 11:30AM-12:30 PM Tues/Thurs in KEC 101
 
 Course Description
 ------------------
