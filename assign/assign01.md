@@ -123,6 +123,8 @@ To submit your work, make sure your **Freefall.cpp** file is saved, and in the C
 
 Enter your Marmoset username and password (which you should have received by email.) Note that your password will not be echoed to the screen. Make sure that after you enter your username and password, you see a message indicating that the submission was successful.
 
+If the **make submit** command does not work, you can [submit using the web interface](../submitting.html) (see the link for details).
+
 **Important**: Make sure that you check the file(s) you submitted to ensure that they are correct. Log into the server using the following URL (also linked off the course homepage):
 
 > <https://cs.ycp.edu/marmoset/>

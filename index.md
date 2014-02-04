@@ -15,12 +15,14 @@ All information about the course will be posted here.
 * [Assignments](assign/index.html)
 * [Labs](labs/index.html)
 * [Resources](resources.html)
+* [Submitting labs and assignments](submitting.html)
 * [Examples](examples/index.html)
 * [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html)
 * [Tutoring](tutoring.html)
 
 ## News
 
+* **Feb 4** - Detailed instructions for [submitting labs and assignments](submitting.html) have been posted.  Please refer to these instructions if you are having trouble submitting your work.
 * **Feb 4** - [Assignment 2](assign/assign02.html) has been posted.  Milestone 1 is due Wednesday, Feb 12th, and Milestone 2 is due Wednesday, Feb 19th.
 * **Feb 4** - Because the college was closed yesterday, the due date for [Assignment 1](assign/assign01.html) has been changed to today, Tuesday, Feb 4th by 11:59 PM.
 * **Feb 3** - [Tutoring](tutoring.html), both in-class and drop-in evening sessions, will start Tuesday, Feb 4th.
