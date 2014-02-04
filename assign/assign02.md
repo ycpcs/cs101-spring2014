@@ -102,7 +102,7 @@ Hints
 
 You can allow your program to generate random integer values as follows.
 
--   Add **\#include \<stdlib.h\>** and **\#include \<time.h\>** to the top of the file (above or below **\#include \<stdio.h\>**)
+-   Add **\#include &lt;stdlib.h&gt;** and **\#include &lt;time.h&gt;** to the top of the file (above or below **\#include &lt;stdio.h&gt;**)
 -   The first line of code in your **main** function should be
 
         srand(time(0));
