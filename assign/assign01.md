@@ -3,7 +3,7 @@ layout: default
 title: "Assignment 1: Freefalling"
 ---
 
-**Due: Monday, February 3rd by 11:59 PM**
+Due: <strike>Monday, February 3rd</strike> **Tuesday, February 4th** by 11:59 PM
 
 Getting Started
 ===============
