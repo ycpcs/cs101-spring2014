@@ -3,6 +3,8 @@ layout: default
 title: Syllabus
 ---
 
+*Updated Feb 10th* - Added **Late Policy** section
+
 CS 101 - Introduction to Computer Science I
 ===========================================
 
@@ -120,6 +122,12 @@ Assignments and (some) labs will be posted as zip files on the course web page,
 Assignments will be submitted using the server <https://cs.ycp.edu/marmoset/>. You will receive an email containing the username and password you will use for this server.
 
 Some labs will be done online using CloudCoder: <https://cs.ycp.edu/cloudcoder/>. You will receive an email containing the username and password you will use for CloudCoder.
+
+### Late Policy
+
+Assignments may be submitted up to two days late, with a penalty of 20% per day late.  No credit will be given for assignments submitted more than 2 days late.
+
+**Important**: As mentioned above in the **Grades** section, you must make a good faith effort to complete all of the homework assignments in order to receive a passing grade for the course.
 
 ### Homework Policy
 
