@@ -43,7 +43,7 @@ Your program should prompt the user to enter the current temperature and the cha
 -   If the temperature is **below 0 degrees**, print:  
     *"You'll freeze out there."*
 
-**Additionally**, your program should simulate the weather to determine whether or not it rained. To do this, first generate a random number from 0 to 100. If the generated number is less than the percent chance of precipitation entered by the user, then your program should indicate that it has precipitated. Otherwise, your program should indicate that it has not precipitated.
+**Additionally**, your program should simulate the weather to determine whether or not it rained. To do this, first generate a random number such that there are 100 possible values (e.g., 0 to 99, or 1 to 100). If the generated number is less than the percent chance of precipitation entered by the user, then your program should indicate that it has precipitated. Otherwise, your program should indicate that it has not precipitated.
 
 Example run (user input in **bold**):
 
@@ -111,10 +111,10 @@ srand(time(0));
 
 This statement will seed the random number generator with a value based on the current time.
 
-When the program simulates the weather, it can "randomly" choose an integer in the range 0 through 100 (inclusive) using the expression
+When the program simulates the weather, it can "randomly" choose an integer with 100 possible values (0 to 99 inclusive) using the expression
 
 {% highlight cpp %}
-rand() % 101
+rand() % 100
 {% endhighlight %}
 
 Submit
