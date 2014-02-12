@@ -14,7 +14,7 @@ while ( <i>condition</i> ) {
 }
 </pre>
 
-You can think of the whlie loop as being a simplified for loop. The for loop as built-in support for performing initialization and updating the loop variable. In a while loop, these must be done before the loop starts (initialization) and at the end of the loop body (updating the loop variable.)
+You can think of the whlie loop as being a simplified for loop. The for loop has built-in support for performing initialization and updating the loop variable. In a while loop, these must be done before the loop starts (initialization) and at the end of the loop body (updating the loop variable.)
 
 Examples of for loop and equivalent while loop:
 
