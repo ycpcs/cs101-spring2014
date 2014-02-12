@@ -13,7 +13,9 @@ and submitting the labs will negatively impact your course grade.
 > ---- | --- | ----
 > Thurs, Jan 23rd | [Lab 1: Hello CS101!](lab01.html) | [CS101\_Lab01.zip](CS101_Lab01.zip)
 > Tues, Jan 28th | [Lab 2: Expensive Calculator](lab02.html) | [CS101\_Lab02.zip](CS101_Lab02.zip)
-> Thurs, Jan 30th | [Lab 3: Math Functions](lab03.html) | [CS101\_Lab03.zip](CS101_Lab03.zip)
+> Thurs, Jan 30th | [Lab 3: Math Functions](lab03.html) | n/a
 > Tues, Feb 4th | [Lab 4: Salary Calculator](lab04.html) | [CS101\_Lab04.zip](CS101_Lab04.zip)
 > Thurs, Feb 6th | [Lab 5: Conditions reading/modifying exercise](lab05.html) | [CS101\_Lab05.zip](CS101_Lab05.zip)
 > Tues, Feb 11th | [Lab 6: Checking the Weather](lab06.html) | [CS101\_Lab06.zip](CS101_Lab06.zip)
+> Thurs, Feb 13th | [Lab 7: For loops](lab07.html) | n/a
+> Tues, Feb 18th | [Lab 8: Gone loopy](lab08.html) | [CS101\_Lab08.zip](CS101_Lab08.zip)
