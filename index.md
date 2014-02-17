@@ -22,6 +22,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Feb 17** - The [Schedule](schedule.html) has been updated due to the cancelation of class on Feb 13th.
 * **Feb 10** - The [Syllabus](syllabus.html) has been updated to specify the policy for late assignments.
 * **Feb 4** - Detailed instructions for [submitting labs and assignments](submitting.html) have been posted.  Please refer to these instructions if you are having trouble submitting your work.
 * **Feb 4** - [Assignment 2](assign/assign02.html) has been posted.  Milestone 1 is due Wednesday, Feb 12th, and Milestone 2 is due Wednesday, Feb 19th.

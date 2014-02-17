@@ -18,9 +18,9 @@ announced in class and on the course web page.
 > Tues, Feb 4 | [Lecture 4: Conditions and decisions](lectures/lecture04.html), Pg. 65-83 | Week3 &rarr; [Basic Double Coupon](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=91), [Simple Filter](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=92), [Restaurant check calculator](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=94), [Bank Balance](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=93)
 > Thurs, Feb 6 | Conditions/decisions reading/modifying exercise | 
 > Tues, Feb 11 | [Lecture 5: If/Else If/Else Statements, Random Numbers](lectures/lecture05.html) | Week4 &rarr; [Triple Coupon](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=95), [member discount](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=96), [Complex Filter](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=97)
-> Thurs, Feb 13 | [Lecture 6: For loops, Loop recipes](lectures/lecture06.html), Pg. 42-53 | Week4 &rarr; [bananana](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=98), [countdown](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=99), [keep doubling](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=100)
-> Tues, Feb 18 | [Lecture 7: While loops, Coding style](lectures/lecture07.html), Pg. 56-63 | Week5 &rarr; [Check Input](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=101), [squares](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=102), [day numbers](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=103)
-> Thurs, Feb 20 | Loops reading/modifying exercise |
+> Thurs, Feb 13 | Class canceled due to snow |
+> Tues, Feb 18 | [Lecture 6: For loops, Loop recipes](lectures/lecture06.html), Pg. 42-53 | Week4 &rarr; [bananana](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=98), [countdown](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=99), [keep doubling](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=100)
+> Thurs, Feb 20 | [Lecture 7: While loops, Coding style](lectures/lecture07.html), Pg. 56-63 | Week5 &rarr; [Check Input](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=101), [squares](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=102), [day numbers](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=103)
 > Tues, Feb 25 | [Lecture 8: Nested loops, char data type](lectures/lecture08.html), Pg. 53-56 | Week6 &rarr; [111222333444](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=104), [which and how many?](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=105)
 > Thurs, Feb 27 | **Exam 1** | Exam1Review &rarr;
 > Tues, Mar 3 | Winter vacation &mdash; no class |
