@@ -45,6 +45,12 @@ body {
 	border-radius: 16px;
 }
 
+div.linkcolumn ul {
+	width: 240px;
+	margin: 0 0;
+	float: left;
+}
+
 pre {
 	margin-left: 20px;
 	margin-right: 20px;

@@ -10,15 +10,27 @@ All information about the course will be posted here.
 
 ## Links
 
-* [Syllabus](syllabus.html)
-* [Schedule/Readings](schedule.html)
-* [Assignments](assign/index.html)
-* [Labs](labs/index.html)
-* [Resources](resources.html)
-* [Submitting labs and assignments](submitting.html)
-* [Examples](examples/index.html)
-* [How to ask for help](http://faculty.ycp.edu/~dhovemey/askingForHelp.html)
-* [Tutoring](tutoring.html)
+<div class="linkcolumn">
+<ul>
+  <li><a href="syllabus.html">Syllabus</a></li>
+  <li><a href="schedule">Schedule/Readings</a></li>
+  <li><a href="assign/index.html">Assignments</a></li>
+  <li><a href="labs/index.html">Labs</a></li>
+  <li><a href="resources.html">Resources</a></li>
+</ul>
+</div>
+
+<div class="linkcolumn">
+<ul>
+  <li><a href="submitting.html">Submitting labs and assignments</a></li>
+  <li><a href="examples/index.html">Examples</a></li>
+  <li><a href="http://faculty.ycp.edu/~dhovemey/askingForHelp.html">How to ask for help</a></li>
+  <li><a href="tutoring.html">Tutoring</a></li>
+  <li><a href="refcard.pdf">Reference card [pdf]</a></li>
+</ul>
+</div>
+
+<div style="clear: both;"></div>
 
 ## News
 
