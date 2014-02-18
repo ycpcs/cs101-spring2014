@@ -6,7 +6,7 @@ title: "Assignment 2: Let's Make A Deal"
 **Due dates:**
 
 -   Milestone 1 is due **Wednesday, Feb 12th by 11:59 PM**
--   Milestone 2 is due **Wednesday, Feb 19th by 11:59 PM**
+-   Milestone 2 is due <strike>Wednesday, Feb 19th</strike> **Monday, Feb 24th by 11:59 PM**
 
 The Monty Hall Problem
 ======================

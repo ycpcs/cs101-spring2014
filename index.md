@@ -17,16 +17,18 @@ All information about the course will be posted here.
   <li><a href="assign/index.html">Assignments</a></li>
   <li><a href="labs/index.html">Labs</a></li>
   <li><a href="resources.html">Resources</a></li>
+  <li><a href="submitting.html">Submitting labs and assignments</a></li>
 </ul>
 </div>
 
 <div class="linkcolumn">
 <ul>
-  <li><a href="submitting.html">Submitting labs and assignments</a></li>
   <li><a href="examples/index.html">Examples</a></li>
   <li><a href="http://faculty.ycp.edu/~dhovemey/askingForHelp.html">How to ask for help</a></li>
   <li><a href="tutoring.html">Tutoring</a></li>
   <li><a href="refcard.pdf">Reference card [pdf]</a></li>
+  <li><a href="https://cs.ycp.edu/marmoset">Marmoset (submission server)</a></li>
+  <li><a href="https://cs.ycp.edu/cloudcoder">CloudCoder (practice problems)</a></li>
 </ul>
 </div>
 
@@ -34,6 +36,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Feb 18** - The due date for Milestone 2 of [Assignment 2](assign/assign02.html) has been changed to Monday, Feb 24th by 11:59 PM.
 * **Feb 17** - The [Schedule](schedule.html) has been updated due to the cancelation of class on Feb 13th.
 * **Feb 10** - The [Syllabus](syllabus.html) has been updated to specify the policy for late assignments.
 * **Feb 4** - Detailed instructions for [submitting labs and assignments](submitting.html) have been posted.  Please refer to these instructions if you are having trouble submitting your work.
