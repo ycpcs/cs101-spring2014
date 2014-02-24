@@ -29,6 +29,7 @@ All information about the course will be posted here.
   <li><a href="refcard.pdf">Reference card [pdf]</a></li>
   <li><a href="https://cs.ycp.edu/marmoset">Marmoset (submission server)</a></li>
   <li><a href="https://cs.ycp.edu/cloudcoder">CloudCoder (practice problems)</a></li>
+  <li><a href="practice/index.html">Practice Exams</a></li>
 </ul>
 </div>
 
@@ -36,6 +37,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Feb 20** - Exam 1 will take place in class on Thursday, Feb 27th.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Feb 18** - The due date for Milestone 2 of [Assignment 2](assign/assign02.html) has been changed to Monday, Feb 24th by 11:59 PM.
 * **Feb 17** - The [Schedule](schedule.html) has been updated due to the cancelation of class on Feb 13th.
 * **Feb 10** - The [Syllabus](syllabus.html) has been updated to specify the policy for late assignments.
