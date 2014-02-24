@@ -20,3 +20,4 @@ and submitting the labs will negatively impact your course grade.
 > Thurs, Feb 13th | Class canceled due to snow
 > Tues, Feb 18th | [Lab 7: For loops](lab07.html) | n/a
 > Thurs, Feb 20th | [Lab 8: Gone loopy](lab08.html) | [CS101\_Lab08.zip](CS101_Lab08.zip)
+> Tues, Feb 25th | [Lab 9: Fancy Rectangle](lab09.html) | [CS101\_Lab09.zip](CS101_Lab09.zip)
