@@ -13,7 +13,7 @@ All information about the course will be posted here.
 <div class="linkcolumn">
 <ul>
   <li><a href="syllabus.html">Syllabus</a></li>
-  <li><a href="schedule">Schedule/Readings</a></li>
+  <li><a href="schedule.html">Schedule/Readings</a></li>
   <li><a href="assign/index.html">Assignments</a></li>
   <li><a href="labs/index.html">Labs</a></li>
   <li><a href="resources.html">Resources</a></li>
