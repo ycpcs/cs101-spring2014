@@ -71,13 +71,17 @@ This can be useful for prompting the user to answer a yes or no question:
 
 {% highlight cpp %}
 char answer;
+int keep_going = 1;
 
-do {
+while (keep_going == 1) {
     // some code...
 
     printf("Try again (y or n)? ");
     scanf(" %c", &answer);
-} while (answer == 'y' || answer == 'Y');
+    if (answer != 'y' && answer != 'Y') {
+        keep_going = 0;
+    }
+}
 {% endhighlight %}
 
 Triangular loops
