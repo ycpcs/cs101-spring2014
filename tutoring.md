@@ -19,10 +19,10 @@ In class
 The in-class tutors are
 
 * Section 101: Garrett Fellman
-* Section 102: Austin Koehler
+* Section 102: Daniel Hatton
 * Section 103: John Reale
 * Section 104: Sam Nelson
-* Section 105: Daniel Hatton
+* Section 105: Nikita Bocharov
 
 Evening sessions
 ----------------
