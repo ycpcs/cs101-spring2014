@@ -15,9 +15,9 @@ There are two milestones.
 
 ## Milestone 1
 
-In the first milestone, you will begin writing a program to simulate falling dominos.
+In the first milestone, you will begin writing a program to simulate falling dominos.  You will add code to the file **FallingDominoes.cpp**.
 
-In this milestone, you will allow the user to determine the initial configuration of the "playing field" consisting of 10 positions. Once the configuration has been entered by the user, the program should print a line of text which is a "picture" of the configuration.
+Your program should allow the user to determine the initial configuration of the "playing field" consisting of 10 positions. Once the configuration has been entered by the user, the program should print a line of text which is a "picture" of the configuration.
 
 Here is an example run (user input in bold):
 
