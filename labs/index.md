@@ -22,3 +22,4 @@ and submitting the labs will negatively impact your course grade.
 > Thurs, Feb 20th | [Lab 8: Gone loopy](lab08.html) | [CS101\_Lab08.zip](CS101_Lab08.zip)
 > Tues, Feb 25th | [Lab 9: Fancy Rectangle](lab09.html) | [CS101\_Lab09.zip](CS101_Lab09.zip)
 > Tues, Mar 11th | [Lab 10: Array Exercises](lab10.html) | n/a
+> Thurs, Mar 13th | [Lab 11: More Array Exercises](lab11.html) | n/a
