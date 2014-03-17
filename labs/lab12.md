@@ -46,7 +46,7 @@ In this lab, you will write programs to transform a photo of an adorable kitten 
 
 > ![image](images/lab12/kitten.bmp)
 
-Right-click on this picture, choose "Save As", and save the file in your **H:\\CS101\\CS101\_Lab12** directory. Make sure the resulting file is called **kitten.bmp**.
+This image is included in the lab as a file called **kitten.bmp**.
 
 Each of the three programs looks like this:
 
