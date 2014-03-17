@@ -23,4 +23,4 @@ and submitting the labs will negatively impact your course grade.
 > Tues, Feb 25th | [Lab 9: Fancy Rectangle](lab09.html) | [CS101\_Lab09.zip](CS101_Lab09.zip)
 > Tues, Mar 11th | [Lab 10: Array Exercises](lab10.html) | n/a
 > Thurs, Mar 13th | [Lab 11: More Array Exercises](lab11.html) | n/a
-> Tues, Mar 18th | [Lab 12: Kitten Pictures](lab12.html) | [CS101\_Lab11.zip](CS101_Lab11.zip)
+> Tues, Mar 18th | [Lab 12: Kitten Pictures](lab12.html) | [CS101\_Lab12.zip](CS101_Lab12.zip)
