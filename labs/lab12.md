@@ -8,7 +8,7 @@ Getting Started
 
 Refer to [Lab 1](lab01.html) if you need a reminder about how to start **Cygwin Terminal** or **Notepad++**.
 
-Start by downloading [CS101\_Lab12.zip](labs/lab12.html), saving it in the directory **H:\\CS101**.
+Start by downloading [CS101\_Lab12.zip](CS101_Lab12.zip), saving it in the directory **H:\\CS101**.
 
 Start a **Cygwin Terminal** and run the following commands:
 
