@@ -25,3 +25,4 @@ and submitting the labs will negatively impact your course grade.
 > Thurs, Mar 13th | [Lab 11: More Array Exercises](lab11.html) | n/a
 > Tues, Mar 18th | [Lab 12: Kitten Pictures](lab12.html) | [CS101\_Lab12.zip](CS101_Lab12.zip)
 > Thurs, Mar 20th | [Lab 13: Right Triangle](lab13.html) | [CS101\_Lab13.zip](CS101_Lab13.zip)
+> Tues, Mar 25th | [Lab 14: Simple Stats](lab14.html) | [CS101\_Lab14.zip](CS101_Lab14.zip)
