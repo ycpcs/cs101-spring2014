@@ -37,6 +37,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Mar 24** - [Assignment 4](assign/assign04.html) is due Wednesday, April 2nd by 11:59 PM.
 * **Mar 10** - [Assignment 3](assign/assign03.html) has been posted.  Milestone 1 is due Monday, Mar 17th, and Milestone 2 is due Monday, Mar 24th.
 * **Feb 20** - Exam 1 will take place in class on Thursday, Feb 27th.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Feb 18** - The due date for Milestone 2 of [Assignment 2](assign/assign02.html) has been changed to Monday, Feb 24th by 11:59 PM.
