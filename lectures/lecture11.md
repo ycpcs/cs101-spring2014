@@ -50,7 +50,7 @@ Top-down design can be used for
 > 1.  Developing an algorithm
 >
 > 2.  Implementing the algorithm as a program
->
+
 Start by stating the overall problem:
 
 > Deal a hand of bridge
@@ -107,7 +107,7 @@ If you have used the function call as an expression, then the value returned by 
 
 Simple example:
 
-> **sqrt(x)** in **\<math.h\>**: is a function to compute the (approximate) square root of a double value.
+> **sqrt(x)** in **&lt;math.h&gt;**: is a function to compute the (approximate) square root of a double value.
 
 **sqrt(x)** is like a mathematical function. For a given input value, there is precisely one possible output value.
 
@@ -231,7 +231,7 @@ What is happening?
 >
 > Once the last statement of the called function is executed, control returns to the point where the function was called from. [Where does control return after the first call to **draw\_rectangle()** finishes?]
 
-Functions must be defined (or declared) before being called. In order to call a function, the function must have been defined or declared earlier in the program. Otherwise, the compiler will complain that the function is unknown. (Visual Studio will report "identifier not found".) One way to do this is through the use of *function prototypes*.
+Functions must be defined (or declared) before being called. In order to call a function, the function must have been defined or declared earlier in the program. Otherwise, the compiler will complain that the function is unknown.  One way to do this is through the use of *function prototypes*.
 
 Function Prototypes
 ===================
