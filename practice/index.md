@@ -5,4 +5,5 @@ title: "Practice Exams"
 
 This page has practice exams.
 
-* [Exam 1, Spring 2013](cs101-spring2013-exam1.pdf)
+* [Exam 1, Spring 2013](cs101-spring2013-exam1.pdf), [Exam 1 programming zipfile](cs101-spring2013-exam1-programming.zip)
+* [Exam 2, Spring 2013](cs101-spring2013-exam2.pdf), [Exam 2 programming zipfile](cs101-spring2013-exam2-programming.zip)
