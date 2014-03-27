@@ -31,7 +31,7 @@ announced in class and on the course web page.
 > Thurs, Mar 20 | [Lecture 11: Functions](lectures/lecture11.html), Pg. 119-126 | Week9 &rarr; [Print sum](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=110), [Deep Thought](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=111), [Find Primes](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=112) <img src="{{site.url}}/images/goldstar-tiny.png" />
 > Tues, Mar 25 | [Lecture 12: Functions that return a value](lectures/lecture12.html), Pg. 126-137 | Week10 &rarr; [SumBetween](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=116), [MaxOfThree](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=117)
 > Thurs, Mar 27 | Functions reading/modifying exercise
-> Tues, Apr 1 | **Exam 2** | Exam2Review &rarr;
+> Tues, Apr 1 | **Exam 2** | Exam2Review &rarr; [inRange](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=135)
 > Thurs, Apr 3 | [Lecture 13: Arrays and functions](lectures/lecture13.html), Pg. 137-152 | Week11 &rarr; [ArraySum](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=113), [IsAscending](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=115), [countOdd](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=114)
 > Tues, Apr 8 | [Lecture 14: Pointers, reference parameters](lectures/lecture14.html), Pg. 235-243 | Week12 &rarr; [AddEmUp](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=118)
 > Thurs, Apr 10 | [Lecture 15: Struct types](lectures/lecture15.html), Pg. 165-171 | Week12 &rarr; [area of Rectangle](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=119)
