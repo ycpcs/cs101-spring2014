@@ -12,6 +12,10 @@ Copyright (c) 2005-2014, David H. Hovemeyer \<<dhovemey@ycp.edu>\>
 
 Copyright (c) 2008-2013, David S. Babcock \<<dbabcock@ycp.edu>\>
 
+Copyright (c) 2011, James Moscola \<<jmoscola@ycp.edu>\>
+
+Copyright (c) 2010, Stephen Kuchnicki \<<skuchnic@ycp.edu>\>
+
 Unless indicated otherwise, all of the materials on this website
 are open source, and may be used, modified, and redistributed
 under the terms of the <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">CC-BY-SA 3.0</a>
