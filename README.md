@@ -8,13 +8,13 @@ Pennsylvania.
 
 Unless indicated otherwise, all materials are
 
-Copyright (c) 2005-2014, David H. Hovemeyer \<<dhovemey@ycp.edu>\>
+Copyright (c) 2005-2014, David H. Hovemeyer &lt;<dhovemey@ycp.edu>&gt;
 
-Copyright (c) 2008-2013, David S. Babcock \<<dbabcock@ycp.edu>\>
+Copyright (c) 2008-2013, David S. Babcock &lt;<dbabcock@ycp.edu>&gt;
 
-Copyright (c) 2011, James Moscola \<<jmoscola@ycp.edu>\>
+Copyright (c) 2011, James Moscola &lt;<jmoscola@ycp.edu>&gt;
 
-Copyright (c) 2010, Stephen Kuchnicki \<<skuchnic@ycp.edu>\>
+Copyright (c) 2010, Stephen Kuchnicki &lt;<skuchnic@ycp.edu>&gt;
 
 Unless indicated otherwise, all of the materials on this website
 are open source, and may be used, modified, and redistributed
