@@ -28,3 +28,4 @@ and submitting the labs will negatively impact your course grade.
 > Tues, Mar 25th | [Lab 14: Simple Stats](lab14.html) | [CS101\_Lab14.zip](CS101_Lab14.zip)
 > Thurs, Mar 27th | [Lab 15: Functions reading/modifying exercise](lab15.html) | [CS101\_Lab15.zip](CS101_Lab15.zip)
 > Thurs, Apr 3rd | [Lab 16: Grass Fire](lab16.html) <br> [Lab 17: Fancy Output](lab17.html) | [CS101\_Lab16.zip](CS101_Lab16.zip) <br> [CS101\_Lab17.zip](CS101_Lab17.zip)
+> Tues, Apr 8th | [Lab 18: Boing!](lab18.html) | [CS101\_Lab18.zip](CS101_Lab18.zip)
