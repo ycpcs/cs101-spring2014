@@ -7,6 +7,8 @@ Milestone 1 due **Tuesday, April 15th**
 
 Milestone 2 due **Tuesday, April 22nd**
 
+*Updated 4/7* - Clarified which element should be used when testing **avg\_of\_neighbors** in milestone 1; clarified that if insane extra credit is implemented for milestone 2, the "plain" functionality must be preserved.
+
 Getting Started
 ===============
 
@@ -81,6 +83,8 @@ Enter the left side temperature: <b>70</b>
  70.00 110.00 110.00 110.00 110.00 110.00 110.00 110.00 110.00 200.00 
 Average of neighbors at row=1, col=1 is 55.00
 </pre>
+
+When testing the **avg\_of\_neighbors** function, compute the average of the element at row 1, column 1 (as shown in the example above).
 
 ## Milestone 1 Hints
 
@@ -164,11 +168,13 @@ Milestone 2:
 * Print final temperatures: 10
 * Print number of steps: 5
 
-**Insane Extra Credit** (milestone 2): All of the above, plus give the user the option of animating the simulation using the console graphics functions from [Lab 17](../labs/lab17.html).  Your animation might look something like this (click for full-size animation):
+**Insane Extra Credit** (milestone 2, up to 30 extra points): All of the above, plus give the user the option of animating the simulation using the console graphics functions from [Lab 17](../labs/lab17.html).  Each frame of the animation should render a visualization of one time step of the simulation.  Your animation might look something like this (click for full-size animation):
 
 > <a href="images/assign05/animation.gif"  ><img src="images/assign05/animation_preview.png" alt="Heat Transfer Animation Preview"></a>
 
 Note that in this animation, the **HEIGHT** and **WIDTH** constants were changed to 20.  You can use the **cons\_sleep\_ms** to create a short pause between frames of the animation.  (The example above runs at 10 frames per second, meaning 100ms pauses between frames.)
+
+**Important**: If you implement the insane extra credit option, your program must operate normally (printing the temperatures after equilibrium has been reached) if the user chooses not to view the animation.
 
 **Coding style**: Make sure that you use meaningful variable names, that your code is properly indented, and that you include some comments explaining how the code works. Credit may be deducted if you use poor coding style.
 
