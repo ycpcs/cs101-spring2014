@@ -10,10 +10,12 @@ Struct types are data types (the same way that **int**, **double**, and the othe
 
 The following struct type will be used in the examples below:
 
-    struct Complex {
-        double real;
-        double imag;
-    };
+{% highlight cpp %}
+struct Complex {
+    double real;
+    double imag;
+};
+{% endhighlight %}
 
 An instance of the **Complex** type represents a complex number. The field **real** represents the magnitude of the real part of the complex number, and the field **imag** represents the magnitude of the imaginary part.
 
@@ -22,18 +24,22 @@ Struct Return Value
 
 A function can return a struct instance. For example, we could create a function to return a **Complex** value with specified real and imaginary field values:
 
-    struct Complex makeComplex(double realValue, double imagValue) {
-        struct Complex result;
-        result.real = realValue;
-        result.imag = imagValue;
-        return result;
-    }
+{% highlight cpp %}
+struct Complex makeComplex(double realValue, double imagValue) {
+    struct Complex result;
+    result.real = realValue;
+    result.imag = imagValue;
+    return result;
+}
+{% endhighlight %}
 
 We can call this function as follows:
 
-    struct Complex origin;
-    origin = makeComplex(0.0, 0.0);
-    printf("real=%.1lf, imag=%.1lf\n", origin.real, origin.imag);
+{% highlight cpp %}
+struct Complex origin;
+origin = makeComplex(0.0, 0.0);
+printf("real=%.1lf, imag=%.1lf\n", origin.real, origin.imag);
+{% endhighlight %}
 
 The code above would print the following output:
 
@@ -94,25 +100,29 @@ For example,
 
 We might specify functions to perform these operations as follows:
 
-    Complex makeComplex(double real, double imag);
-    Complex addComplex(Complex left, Complex right);
-    Complex subtractComplex(Complex left, Complex right);
-    Complex mulitplyComplex(Complex left, Complex right);
-    Complex divideComplex(Complex left, Complex right);
+{% highlight cpp %}
+struct Complex makeComplex(double real, double imag);
+struct Complex addComplex(struct Complex left, struct Complex right);
+struct Complex subtractComplex(struct Complex left, struct Complex right);
+struct Complex mulitplyComplex(struct Complex left, struct Complex right);
+struct Complex divideComplex(struct Complex left, struct Complex right);
+{% endhighlight %}
 
 Note: these are just the prototypes, we would also need to write a definition of each function which performs the appropriate computation.
 
 For example, we might define the **makeComplex** function as follows:
 
-    Complex makeComplex(double real, double imag)
-    {
-        Complex result;
+{% highlight cpp %}
+struct Complex makeComplex(double real, double imag)
+{
+    struct Complex result;
 
-        result.real = real;
-        result.complex = complex;
+    result.real = real;
+    result.complex = complex;
 
-        return result;
-    }
+    return result;
+}
+{% endhighlight %}
 
 This function is useful because it allows us to "construct" an instance of **Complex** value from the magnitudes of the real and imaginary components.
 
@@ -122,11 +132,13 @@ Given the operations (functions) defined above, the following code would compute
 
 (3 + 4*i*)(-5 + 2*i*)
 
-    Complex first, second;
+{% highlight cpp %}
+struct Complex first, second;
 
-    first = makeComplex(3, 4);
-    second = makeComplex(-5, 2);
+first = makeComplex(3, 4);
+second = makeComplex(-5, 2);
 
-    Complex product;
+struct Complex product;
 
-    product = multiplyComplex(first, second);
+product = multiplyComplex(first, second);
+{% endhighlight %}
