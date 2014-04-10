@@ -5,9 +5,11 @@ title: "Assignment 5: Heat Transfer on a Rectangular Plate"
 
 Milestone 1 due **Tuesday, April 15th**
 
-Milestone 2 due **Tuesday, April 22nd**
+Milestone 2 due **Tuesday, April 29th**
 
 *Updated 4/7* - Clarified which element should be used when testing **avg\_of\_neighbors** in milestone 1; clarified that if insane extra credit is implemented for milestone 2, the "plain" functionality must be preserved.
+
+*Updated 4/8* - Corrected due date for milestone 2.
 
 Getting Started
 ===============
