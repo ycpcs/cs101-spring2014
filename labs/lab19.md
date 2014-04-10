@@ -38,39 +38,41 @@ In this lab, you will implement a simple bouncing ball animation using the conso
 
 Here is the main function of the program in **Boing2.cpp**, which you will not need to change:
 
-    int main(void) {
-        // NOTE: you don't need to change anything in the main() function
+{% highlight cpp %}
+int main(void) {
+    // NOTE: you don't need to change anything in the main() function
 
-        struct Scene myScene;
+    struct Scene myScene;
 
-        myScene = scene_init();
+    myScene = scene_init();
 
-        int keep_going = 1;
-        while (keep_going == 1) {
-            // clear the off-screen display buffer
-            cons_clear_screen();
+    int keep_going = 1;
+    while (keep_going == 1) {
+        // clear the off-screen display buffer
+        cons_clear_screen();
 
-            // render the scene into the display buffer
-            scene_render(myScene);
+        // render the scene into the display buffer
+        scene_render(myScene);
 
-            // copy the display buffer to the display
-            cons_update();
+        // copy the display buffer to the display
+        cons_update();
 
-            // pause
-            cons_sleep_ms(ANIMATION_DELAY);
+        // pause
+        cons_sleep_ms(ANIMATION_DELAY);
 
-            // update the scene
-            myScene = scene_update(myScene);
+        // update the scene
+        myScene = scene_update(myScene);
 
-            // see if the user has pressed a key
-            int key = cons_get_keypress();
-            if (key != -1) {
-                keep_going = 0;
-            }
+        // see if the user has pressed a key
+        int key = cons_get_keypress();
+        if (key != -1) {
+            keep_going = 0;
         }
-
-        return 0;
     }
+
+    return 0;
+}
+{% endhighlight %}
 
 The idea is simple:
 
@@ -85,10 +87,12 @@ Your task is to add fields to the **Scene** struct type to keep track of the sta
 
 The general idea is that the **struct Scene** type should contain fields that maintain the position and direction of the animated character. For example, in my bouncing ball implementation, my **struct Scene** type is defined this way:
 
-    struct Scene {
-        int x, y;
-        int dx, dy;
-    };
+{% highlight cpp %}
+struct Scene {
+    int x, y;
+    int dx, dy;
+};
+{% endhighlight %}
 
 The **x** and **y** fields maintain the current column and row of the ball, and the **dx** and **dy** fields maintain the current direction (1 for forward, -1 for backward) for the **x** and **y** directions.
 
