@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lecture 18: Pointers to Structures"
+title: "Lecture 17: Pointers to Structures"
 ---
 
 Pointers to Structures
@@ -17,28 +17,34 @@ As we can with primitive types, we can allow functions to take a struct by refer
 
 For example, let's say we have a **Point** struct type that represents a point in the x/y coordinate plane:
 
-    struct Point {
-        double x;
-        double y;
-    };
+{% highlight cpp %}
+struct Point {
+    double x;
+    double y;
+};
+{% endhighlight %}
 
 We could write a **movePoint** function to add arbitrary **dx** and **dy** offsets to a **Point**'s **x** and **y** fields as follows:
 
-    // NOTE: does not return a value, but instead modifies
-    //        the parameter "point", which is a reference parameter
-    void movePoint(struct Point *point, double dx, double dy)
-    {
-        point->x += dx;
-        point->y += dy;
-    }
+{% highlight cpp %}
+// NOTE: does not return a value, but instead modifies
+//        the parameter "point", which is a reference parameter
+void movePoint(struct Point *point, double dx, double dy)
+{
+    point->x += dx;
+    point->y += dy;
+}
+{% endhighlight %}
 
 This function could be used as follows:
 
-    struct Point p = { 3.0, 4.0 };
+{% highlight cpp %}
+struct Point p = { 3.0, 4.0 };
 
-    movePoint(&p, 2.0, -3.0);
-    printf("p.x = %.1lf\n", p.x);     // prints the value 3.0+2.0=5.0
-    printf("p.y = %.1lf\n", p.y);     // prints the value 4.0-3.0=1.0
+movePoint(&p, 2.0, -3.0);
+printf("p.x = %.1lf\n", p.x);     // prints the value 3.0+2.0=5.0
+printf("p.y = %.1lf\n", p.y);     // prints the value 4.0-3.0=1.0
+{% endhighlight %}
 
 Such functions are very useful because they perform *operations* on instances of struct types. This style of programming --- defining a struct type and implementing functions that operate on instances of that type --- is called *encapsulation*, and is one of the most important techniques for designing and implementing larger programs.
 
@@ -48,14 +54,16 @@ Just like with other reference parameters, you can protect yourself against acci
 
 Example:
 
-    void drawPoint(const Point *p, int ch)
-    {
-        cons_move_cursor(p->y,p->x);
-        cons_printw("%c",ch);
-    }
+{% highlight cpp %}
+void drawPoint(const struct Point *p, int ch)
+{
+    cons_move_cursor(p->y,p->x);
+    cons_printw("%c",ch);
+}
+{% endhighlight %}
 
 You would read the type of the first parameter as
 
-> "const Point"
+> "const struct Point"
 
-In other words, the element type is **const Point**, meaning that assignments to the fields of the struct are illegal.
+In other words, the element type is **const struct Point**, meaning that assignments to the fields of the struct are illegal.

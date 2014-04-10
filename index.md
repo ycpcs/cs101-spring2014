@@ -37,6 +37,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Apr 10** - The [Schedule](schedule.html) has been updated.
 * **Apr 7** - [Assignment 5](assign/assign05.html) has been updated with some clarifications.
 * **Apr 4** - [Assignment 5](assign/assign05.html) has been posted.  Milestone 1 is due Tuesday, Apr 15th, and Milestone 2 is due Tuesday, Apr 29th.
 * **Mar 25** - Exam 2 will take place in class on Tuesday, April 1st. A practice exam is available on the [Practice Exams](practice/index.html) page.
