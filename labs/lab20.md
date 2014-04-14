@@ -38,9 +38,11 @@ The task is similar to [Lab 18](lab18.html) and [Lab 19](lab19.html): implement 
 
 The main difference is that the **scene\_init**, **scene\_render**, and **scene\_update** functions will now have the following prototypes:
 
-    void scene_init(struct Scene *s);
-    void scene_render(const struct Scene *s);
-    void scene_update(struct Scene *s);
+{% highlight cpp %}
+void scene_init(struct Scene *s);
+void scene_render(const struct Scene *s);
+void scene_update(struct Scene *s);
+{% endhighlight %}
 
 As you can see, the functions now take a pointer to the **struct Scene**.
 
