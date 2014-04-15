@@ -5,8 +5,6 @@ title: "Assignment 6: Breakout"
 
 **Due: Thursday, May 8th**
 
-*Preliminary assignment description: not official*
-
 Getting Started
 ===============
 
@@ -36,13 +34,13 @@ To run the program, type the command
 Your Task
 =========
 
-Your task is to write an implementation of the classic computer game [Breakout](http://en.wikipedia.org/wiki/Breakout_(arcade_game)).
+Your task is to write an implementation of the classic computer game [Breakout](http://en.wikipedia.org/wiki/Breakout_(video_game\)).
 
-Here is a screenshot which you should use as a basis for your game:
+When you implement the basic gameplay features, the game should look something like this:
 
-> ![image](figures/assign6-screenshot.png)
+> ![image](images/assign06/animation.gif)
 
-The player controls a paddle (the row of blue '=' characters at the bottom of the screen) by pressing the left and right arrow key. The goal of the game is to deflect the ball (the white '\*' character) towards the colored rows of bricks at the top of the screen. Each time the ball strikes a brick, the brick is destroyed, the player earns some number of points, and the ball is deflected vertically. If the player lets the ball move down past the bottom of the screen, the ball is lost and the game ends.
+The player controls a paddle (the <span style="background: cyan;">cyan</span>-colored bar at the bottom of the screen) by pressing the left and right arrow keys. The goal of the game is to deflect the ball (the white '\*' character) towards the colored rows of bricks at the top of the screen. Each time the ball strikes a brick, the brick is destroyed, the player earns some number of points, and the ball is deflected vertically. If the player lets the ball move down past the bottom of the screen, the ball is lost and the game ends.
 
 You can run our implementation to get a sense of how yours should work:
 
@@ -54,15 +52,15 @@ Requirements
 Game requirements
 -----------------
 
-There should be 6 rows of bricks, each a different color. Each brick is three characters wide. There is one row of space between each row of bricks. Each brick is separated by one column of space.
+There should be 6 rows of bricks, each a different color. Each brick is three characters wide. There is one row of space between each row of bricks. Each brick is separated by four columns of space.
 
 The bricks in the bottom row are worth 10 points each. The bricks in the row immediately above the bottom row are worth 20 points each, and so forth, up to the bricks in the top row, which are worth 60 points.
 
 The ball always moves diagonally. It bounces when it hits the left, top, or right side of the screen. If the ball moves past the bottom row of the screen, the game is over.
 
-The paddle is 10 characters wide.
+The paddle is 16 characters wide.
 
-The animation delay per frame is set at 75 milliseconds, which works out to about 13 and 1/3 frames per second. The player may move the paddle every time the **update\_scene** function is called. The ball may move only *every other* time the **update\_scene** function is called. This means that the paddle can move faster than the ball.
+The animation delay per frame is set at 75 milliseconds, which works out to about 13 and 1/3 frames per second.  The paddle moves two spaces per call to **scene\_update**, while the ball moves only one space per call to **scene\_update**.
 
 When the ball strikes the paddle, it is deflected back up towards the top of the screen.
 
@@ -77,25 +75,13 @@ Your task is to implement the **create\_scene**, **render\_scene**, and **update
 
 The **create\_scene** function should set up the initial state of the game by assigning values to the fields of the **struct Scene** instance.
 
-The **render\_scene** function should use the console output functions to draw the current game state on the screen.
+The **render\_scene** function should use the console output functions to draw the current game state on the screen.  If the game is over, this function should display "Game over".
 
-The **update\_scene** function should check the keyboard to see if the left or right arrow keys have been pressed, and move the paddle accordingly. (The paddle should not be allowed to be moved off the screen.) It should also check to see if the ball has collided with a brick or the paddle, and update the game state appopriately.
+The **update\_scene** function updates the **struct Scene** by moving the paddle, moving the ball, checking for collisions, etc.  In addition to the **struct Scene** pointer, this function also takes a key code as a parameter.  The key code is -1 if no key was pressed.  If the left or right arrow keys were pressed, the position of the paddle should be updated accordingly.  If the ball has collided with the paddle, or if the ball has hit the left, right, or top edges of the window, it should be deflected.  If the ball has reached the bottom row of the window, then the game is over.  If the key code is 'q', then the program should (meaning that **update\_scene** should return **false**: see below.)
 
-You can use the **cons\_get\_keypress** function to check to see if a key has been pressed:
+The **LEFT\_ARROW** and **RIGHT\_ARROW** constants are the key codes for the left and right arrow keys, respectively.
 
-    int key;
-
-    key = cons_get_keypress();
-
-    if (key == LEFT_ARROW) {
-        // the left arrow key was pressed
-        // ...
-    }
-
-    if (key == RIGHT_ARROW) {
-        // the right arrow key was pressed
-        // ...
-    }
+The **update\_scene** function returns a **bool** (boolean) value.  It should return **true** if the program should continue, or **false** if the program should exit.  (Look at the **main** function so you can see how the return value of **update\_scene** is used.)
 
 Hints
 =====
@@ -116,26 +102,46 @@ Here is a possible strategy for implementing the program:
 
 6.  Print the player's current score in the upper-right corner of the screen.
 
-Use struct data types to instances of bricks, balls, and the player's paddle. Write functions to perform operations on instances of these struct data types, taking the instances using pointer parameters. For example, I have the following function in my implementation:
+Use struct data types to instances of bricks, ball(s), and the player's paddle. Here is a possible definition of **struct Scene**:
 
-    void destroy_brick(struct Scene *scene, struct Brick *brick)
-    {
-        // ...
-    }
+{% highlight cpp %}
+struct Scene {
+    struct Brick bricks[BRICKS_PER_ROW*NUM_ROWS];
+    struct Ball ball;
+    struct Paddle paddle;
+    bool gameover;
+    bool done;
+    bool paused;
+    int score;
+};
+{% endhighlight %}
 
-This function causes a specific brick to be destroyed, following a collision between the ball and that particular brick.
+Notice how each brick, as well as the ball and paddle, are represented by structs.  The bricks are stored in an array, one element per brick.
 
 Grading criteria
 ================
 
-Implementing the basic features as described above will earn up to 85 points. Of those 85 points, 15 points are allocated to design and coding style. Make sure your program uses consistent indentation, and has meaningful names for variables, functions, and struct data types.
+Implementing the basic features as described above will earn up to 100 points:
+
+* Player can move the paddle: 15
+* Six rows of bricks are drawn: 10
+* Ball moves: 10
+* Collision detection:
+  * Ball with paddle: 10
+  * Ball with left/right/top edge of window: 10
+  * Ball with bricks: 15
+* Points are scored when the ball hits a brick: 10
+* Game ends when the ball goes off the bottom edge: 5
+* Design and coding style: 15
+
+To earn full credit for design and coding style, make sure your program uses consistent indentation, and has meaningful names for variables, functions, and struct data types.
 
 Extra credit
 ------------
 
 The following features may be implemented for extra credit:
 
-**Multiple balls** (up to 5 points). Multiple balls are on the screen simultaneously.
+**Multiple balls** (up to 5 points). Multiple balls are on the screen simultaneously.  The game ends when all of the balls have been lost by moving off the bottom of the window.
 
 **Lives** (up to 5 points). Instead of ending the game when the ball escapes past the bottom row of the screen, consider this as costing the player one life. The game ends when the player runs out of lives. The current number of lives should be displayed on the screen.
 
@@ -167,3 +173,7 @@ Enter your Marmoset username and password (which you should have received by ema
 You should see a list of labs and assignments. In the row for **assign05**, click the link labeled **view**. You will see a list of your submissions. Download the most recent one (which should be listed first). Verify that it contains the correct files.
 
 **You are responsible for making sure that your submission contains the correct file(s).**
+
+<!-- vim:set wrap: ­-->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->
