@@ -5,6 +5,8 @@ title: "Assignment 6: Breakout"
 
 **Due: Thursday, May 8th**
 
+*Updated 4/16*: Link to example solution should be working now
+
 Getting Started
 ===============
 
@@ -45,6 +47,15 @@ The player controls a paddle (the <span style="background: cyan;">cyan</span>-co
 You can run our implementation to get a sense of how yours should work:
 
 > [Breakout.exe](Breakout.exe)
+
+Suggestion: download this file and save it in **H:/CS101**.  In Cygwin terminal, run the commands
+
+    cd h:
+    cd CS101
+    chmod a+x Breakout.exe
+    ./Breakout.exe
+
+The example solution will only run in Cygwin on Windows.
 
 Requirements
 ============

@@ -37,6 +37,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **Apr 16** - The link to the example solution for [Assignment 6](assign/assign06.html) should be working now.
 * **Apr 15** - [Assignment 6](assign/assign06.html) is due Thursday, May 8th by 11:59 PM.
 * **Apr 10** - The [Schedule](schedule.html) has been updated.
 * **Apr 7** - [Assignment 5](assign/assign05.html) has been updated with some clarifications.
