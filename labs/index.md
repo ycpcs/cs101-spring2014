@@ -31,3 +31,4 @@ and submitting the labs will negatively impact your course grade.
 > Tues, Apr 8th | [Lab 18: Boing!](lab18.html) | [CS101\_Lab18.zip](CS101_Lab18.zip)
 > Thurs, Apr 10th | [Lab 19: Boing! revisited](lab19.html) | [CS101\_Lab19.zip](CS101_Lab19.zip)
 > Tues, Apr 15th | [Lab 20: Boing! with pointers](lab20.html) | [CS101\_Lab20.zip](CS101_Lab20.zip)
+> Thurs, Apr 24th | [Lab 21: Boing! particle simulation](lab21.html) | [CS101\_Lab21.zip](CS101_Lab21.zip)
