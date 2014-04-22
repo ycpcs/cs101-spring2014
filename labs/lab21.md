@@ -10,7 +10,7 @@ Getting Started
 
 As always, you may refer to [Lab 1](lab01.html) if you need a reminder about how to start the **Cygwin Bash Shell** or **Notepad++**.
 
-Begin by downloading [CS101\_Lab21.zip>\](CS101_Lab21.zip). Save the zip file in the **H:\\CS101** directory.
+Begin by downloading [CS101\_Lab21.zip](CS101_Lab21.zip). Save the zip file in the **H:\\CS101** directory.
 
 Start the **Cygwin Bash Shell** and run the following commands:
 
