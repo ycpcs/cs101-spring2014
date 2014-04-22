@@ -37,11 +37,11 @@ announced in class and on the course web page.
 > Thurs, Apr 10 | [Lecture 15: Struct types](lectures/lecture15.html), Pg. 165-171 | Week12 &rarr; [area of Rectangle](https://cs.ycp.edu/cloudcoder/#exercise?c=5,p=119)
 > Tues, Apr 15 | [Lecture 16: Using structs with functions](lectures/lecture16.html), Pg. 185-190 <br> [Lecture 17: Pointers to Structures](lectures/lecture17.html)  | Week13 &rarr;
 > Thurs, Apr 17 | Spring vacation &mdash; no class |
-> Tues, Apr 22 | Structs review | Week14 &rarr;
-> Thurs, Apr 24 | **Exam 3** | Exam3Review &rarr;
-> Tues, Apr 29 | [Lecture 18: Composition](lectures/lecture18.html) <br> [Lecture 19: Arrays of Structures](lectures/lecture19.html) | Week15 &rarr;
-> Thurs, May 1 | TBA | Week15 &rarr;
-> Tues, May 6 | TBA | Week 16 &rarr;
+> Tues, Apr 22 | Work day | Week14 &rarr;
+> Thurs, Apr 24 | [Lecture 18: Composition](lectures/lecture18.html) <br> [Lecture 19: Arrays of Structures](lectures/lecture19.html) | Week14 &rarr;
+> Tues, Apr 29 | **Exam 3** | Exam3Review &rarr;
+> Thurs, May 1 | Work day | Week15 &rarr;
+> Tues, May 6 | Work day | Week 16 &rarr;
 > Thurs, May 8 | **Exam 4** | Exam4Review &rarr;
 
 <!-- vim:set wrap: ­-->
