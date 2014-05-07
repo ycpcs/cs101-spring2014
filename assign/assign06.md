@@ -181,7 +181,7 @@ Enter your Marmoset username and password (which you should have received by ema
 
 > [https://cs.ycp.edu/marmoset](https://cs.ycp.edu/marmoset)
 
-You should see a list of labs and assignments. In the row for **assign05**, click the link labeled **view**. You will see a list of your submissions. Download the most recent one (which should be listed first). Verify that it contains the correct files.
+You should see a list of labs and assignments. In the row for **assign06**, click the link labeled **view**. You will see a list of your submissions. Download the most recent one (which should be listed first). Verify that it contains the correct files.
 
 **You are responsible for making sure that your submission contains the correct file(s).**
 
