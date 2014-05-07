@@ -37,6 +37,7 @@ All information about the course will be posted here.
 
 ## News
 
+* **May 7** - A practice final exam is available on the [Practice Exams](practice/index.html) page.
 * **May 1** - Exam 4 will take place in class on Thursday, May 8th.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Apr 22** - Exam 3 has been moved to **Tuesday, April 29th**.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Apr 16** - The link to the example solution for [Assignment 6](assign/assign06.html) should be working now.
